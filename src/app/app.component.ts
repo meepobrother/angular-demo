@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
   }
 
   onHome(e: any) {
-    this.core.showAlert({ title: '开发中。。。', content: '详细用法请耐心等待升级' });
+    this.core.showMenu({ show: true });
   }
 
   onFinish(e: any) {

@@ -3689,9 +3689,9 @@ meepo-citypicker@^1.0.3:
     rxjs "^5.5.5"
     zone.js "0.8.4"
 
-meepo-core@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-1.0.4.tgz#36888f3475772dee2eb5252822a31d8154575748"
+meepo-core@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-1.0.5.tgz#6ec1e538a45dcda88dbc17e1316adf9bfe617cf6"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
