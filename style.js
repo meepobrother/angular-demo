@@ -14,8 +14,7 @@ let tsFileTester = /\.ts$/;
 
 let stylesRegex = /styleUrls *:(\s*\[[^\]]*?\])/g;
 let htmlRegex = /templateUrl\s*:\s*\'(\S*?)\'/g;
-let imageRegex = /url\((\S*?)\)/g;
-
+let imageRegex = /url\([\'\"](\S*?\.png)[\'\"]\)/g;
 
 let stringRegex = /(['"])((?:[^\\]\\\1|.)*?)\1/g;
 let lessNumRegex = /style_(\d+)_less/g;
@@ -87,6 +86,22 @@ function writeBackCss(path) {
     }
 }
 
+function strTrim(str){
+    return str.replace(/\\e/g, function (match, e) {
+        // 对content中的类似'\e630'中的\e进行处理
+        return '\\\\e';
+    }).replace(/\\E/g, function (match, e) {
+        // 对content中的类似'\E630'中的\E进行处理
+        return '\\\\E';
+    }).replace(/\\20/g, function (match, e) {
+        // 对content中的类似'\20'中的\20进行处理
+        return '\\\\20';
+    }).replace(/`/g, function (match, e) {
+        // 处理css中`符号
+        return "'";
+    })
+}
+
 function processLess() {
     let index = 0;
     while (index < lessFilePool.length) {
@@ -116,19 +131,7 @@ function processLess() {
                                     });
                                     output.css = contentTemp;
                                 }
-                                lessFilePool[index] = output.css.replace(/\\e/g, function (match, e) {
-                                    // 对content中的类似'\e630'中的\e进行处理
-                                    return '\\\\e';
-                                }).replace(/\\E/g, function (match, e) {
-                                    // 对content中的类似'\E630'中的\E进行处理
-                                    return '\\\\E';
-                                }).replace(/\\20/g, function (match, e) {
-                                    // 对content中的类似'\20'中的\20进行处理
-                                    return '\\\\20';
-                                }).replace(/`/g, function (match, e) {
-                                    // 处理css中`符号
-                                    return "'";
-                                });
+                                lessFilePool[index] = strTrim(output.css);
                             }
                             doneOne();
                         })
@@ -156,10 +159,10 @@ function processLess() {
                                 let base64 = 'url(data:image/png;base64,' + content.toString("base64") + ')';
                                 return base64;
                             });
-                            lessFilePool[index] = contentTemp;
+                            lessFilePool[index] = strTrim(contentTemp);
                             doneOne();
                         } else {
-                            lessFilePool[index] = output.css;
+                            lessFilePool[index] = strTrim(output.css);
                             doneOne();
                         }
                     }
@@ -171,7 +174,7 @@ function processLess() {
                     if (e) {
                         console.log(e)
                     } else {
-                        lessFilePool[index] = data.toString();
+                        lessFilePool[index] = strTrim(data.toString());
                     }
                     doneOne();
                 });

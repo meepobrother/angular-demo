@@ -237,10 +237,6 @@
   dependencies:
     "@types/jasmine" "*"
 
-"@types/js-base64@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@types/js-base64/-/js-base64-2.3.1.tgz#c39f14f129408a3d96a1105a650d8b2b6eeb4168"
-
 "@types/node@*":
   version "8.5.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.1.tgz#4ec3020bcdfe2abffeef9ba3fbf26fca097514b5"
@@ -537,6 +533,13 @@ aws-sign2@~0.7.0:
 aws4@^1.2.1, aws4@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
+
+axios@^0.17.1:
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.17.1.tgz#2d8e3e5d0bdbd7327f91bc814f5c57660f81824d"
+  dependencies:
+    follow-redirects "^1.2.5"
+    is-buffer "^1.1.5"
 
 babel-code-frame@^6.11.0, babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
   version "6.26.0"
@@ -2306,6 +2309,12 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.1"
     readable-stream "^2.0.4"
 
+follow-redirects@^1.2.5:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.2.6.tgz#4dcdc7e4ab3dd6765a97ff89c3b4c258117c79bf"
+  dependencies:
+    debug "^3.1.0"
+
 for-in@^0.1.3:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-0.1.8.tgz#d8773908e31256109952b1fdb9b3fa867d2775e1"
@@ -3662,19 +3671,44 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
-meepo-bmap@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-1.0.9.tgz#415adde51efaa87f253345dab24f10199b503ac7"
+meepo-axios@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/meepo-axios/-/meepo-axios-1.0.5.tgz#60d8e8dd1df2ad8520cb3c41254c0e2528559995"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
     "@angular/forms" "^5.1.0"
     "@angular/platform-browser" "^5.1.0"
-    "@types/js-base64" "^2.3.1"
-    js-base64 "^2.4.0"
+    "@nestjs/common" "^4.5.1"
+    "@nestjs/core" "^4.5.1"
+    "@nestjs/microservices" "^4.5.1"
+    "@nestjs/testing" "^4.5.1"
+    "@nestjs/websockets" "^4.5.1"
+    axios "^0.17.1"
+    mysql "^2.15.0"
+    reflect-metadata "~0.1.10"
+    rxjs "^5.5.0"
+    typeorm "^0.1.9"
+    zone.js "0.8.4"
+
+meepo-bmap@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-2.1.1.tgz#100843432e7dfafb627202b4612aedc48d597ceb"
+  dependencies:
+    "@angular/common" "^5.1.0"
+    "@angular/core" "^5.1.0"
+    "@angular/forms" "^5.1.0"
+    "@angular/platform-browser" "^5.1.0"
+    "@nestjs/common" "^4.5.1"
+    "@nestjs/core" "^4.5.1"
+    "@nestjs/microservices" "^4.5.1"
+    "@nestjs/testing" "^4.5.1"
+    "@nestjs/websockets" "^4.5.1"
+    mysql "^2.15.0"
     reflect-metadata "^0.1.10"
-    rxjs "^5.5.5"
+    rxjs "^5.5.0"
     store "^2.0.12"
+    typeorm "^0.1.9"
     zone.js "0.8.4"
 
 meepo-citypicker@^1.0.3:
@@ -3689,9 +3723,9 @@ meepo-citypicker@^1.0.3:
     rxjs "^5.5.5"
     zone.js "0.8.4"
 
-meepo-core@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-1.0.5.tgz#6ec1e538a45dcda88dbc17e1316adf9bfe617cf6"
+meepo-core@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-2.1.2.tgz#dc768638114bda2aacbbe16d763e90dc6bf35dd6"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
@@ -3702,7 +3736,6 @@ meepo-core@^1.0.5:
     "@nestjs/microservices" "^4.5.1"
     "@nestjs/testing" "^4.5.1"
     "@nestjs/websockets" "^4.5.1"
-    meepo-bmap "^1.0.9"
     mysql "^2.15.0"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.5"
@@ -5011,7 +5044,7 @@ reduce-function-call@^1.0.1:
   dependencies:
     balanced-match "^0.4.2"
 
-reflect-metadata@^0.1.10, reflect-metadata@^0.1.2:
+reflect-metadata@^0.1.10, reflect-metadata@^0.1.2, reflect-metadata@~0.1.10:
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.10.tgz#b4f83704416acad89988c9b15635d47e03b9344a"
 
@@ -5219,7 +5252,7 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@^5.5.2, rxjs@^5.5.5:
+rxjs@^5.5.0, rxjs@^5.5.2, rxjs@^5.5.5:
   version "5.5.5"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.5.tgz#e164f11d38eaf29f56f08c3447f74ff02dd84e97"
   dependencies:
