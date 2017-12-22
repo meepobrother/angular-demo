@@ -9,7 +9,8 @@ import { XscrollModule } from 'meepo-xscroll';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PostTaskPage
   ],
   imports: [
     BrowserModule,

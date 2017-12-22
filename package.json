@@ -26,7 +26,7 @@
     "core-js": "^2.4.1",
     "js-base64": "^2.4.0",
     "meepo-axios": "^1.0.6",
-    "meepo-bmap": "^2.1.4",
+    "meepo-bmap": "^2.1.5",
     "meepo-citypicker": "^1.0.3",
     "meepo-core": "^2.1.7",
     "meepo-xscroll": "^1.0.3",
