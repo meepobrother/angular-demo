@@ -1,4 +1,7 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import {
+  Component, OnInit, ChangeDetectionStrategy,
+  ChangeDetectorRef, TemplateRef, ViewChild
+} from '@angular/core';
 import { CoreService } from 'meepo-core';
 
 @Component({
@@ -9,7 +12,7 @@ import { CoreService } from 'meepo-core';
 })
 export class AppComponent implements OnInit {
   title = 'app';
-
+  @ViewChild('postTask') postTask: TemplateRef<any>;
   btnTitle: string = '在这里下单';
 
   loading: boolean = true;
@@ -31,7 +34,7 @@ export class AppComponent implements OnInit {
   }
 
   onFinish(e: any) {
-    console.log(e);
-    this.core.showAlert({ title: '开发中。。。', content: '详细用法请耐心等待升级' });
+    const cfg: any = { tpl: this.postTask };
+    this.core.showPopover(cfg);
   }
 }
