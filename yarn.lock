@@ -3678,9 +3678,9 @@ meepo-bmap@^2.2.7:
     typeorm "^0.1.9"
     zone.js "0.8.4"
 
-meepo-core@^2.3.7:
-  version "2.3.7"
-  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-2.3.7.tgz#79e0c55354de25a9b4111235b6ba84a15e6b9c9a"
+meepo-core@^2.3.8:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-2.3.8.tgz#6e5fb4c13dfc36d2bfadb3bd052171e55c8d10d6"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
@@ -3691,16 +3691,16 @@ meepo-core@^2.3.7:
     "@nestjs/microservices" "^4.5.1"
     "@nestjs/testing" "^4.5.1"
     "@nestjs/websockets" "^4.5.1"
-    meepo-xscroll "^1.0.8"
+    meepo-xscroll "^1.0.9"
     mysql "^2.15.0"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.5"
     typeorm "^0.1.9"
     zone.js "0.8.4"
 
-meepo-xscroll@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.0.8.tgz#de0385980edf2759a19a3904a67d009b853fb45c"
+meepo-xscroll@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.0.9.tgz#e54c85085da3903a0e74de7ea5338e6253bd2992"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
