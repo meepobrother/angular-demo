@@ -534,13 +534,6 @@ aws4@^1.2.1, aws4@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
 
-axios@^0.17.1:
-  version "0.17.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.17.1.tgz#2d8e3e5d0bdbd7327f91bc814f5c57660f81824d"
-  dependencies:
-    follow-redirects "^1.2.5"
-    is-buffer "^1.1.5"
-
 babel-code-frame@^6.11.0, babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-code-frame/-/babel-code-frame-6.26.0.tgz#63fd43f7dc1e3bb7ce35947db8fe369a3f58c74b"
@@ -2309,12 +2302,6 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.1"
     readable-stream "^2.0.4"
 
-follow-redirects@^1.2.5:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.2.6.tgz#4dcdc7e4ab3dd6765a97ff89c3b4c258117c79bf"
-  dependencies:
-    debug "^3.1.0"
-
 for-in@^0.1.3:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-0.1.8.tgz#d8773908e31256109952b1fdb9b3fa867d2775e1"
@@ -3671,52 +3658,9 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
-meepo-axios@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/meepo-axios/-/meepo-axios-1.0.6.tgz#a4500efa8945461287d6496aec325817d9967f34"
-  dependencies:
-    "@angular/common" "^5.1.0"
-    "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
-    "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
-    axios "^0.17.1"
-    js-base64 "^2.4.0"
-    meepo-base64 "^1.0.0"
-    meepo-core "^2.1.2"
-    mysql "^2.15.0"
-    reflect-metadata "~0.1.10"
-    rxjs "^5.5.0"
-    typeorm "^0.1.9"
-    zone.js "0.8.4"
-
-meepo-base64@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/meepo-base64/-/meepo-base64-1.0.0.tgz#7e14f04570820885343f3ae2e8e916e9f489384c"
-  dependencies:
-    "@angular/common" "^5.1.0"
-    "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
-    "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
-    js-base64 "^2.4.0"
-    mysql "^2.15.0"
-    reflect-metadata "^0.1.10"
-    rxjs "^5.5.5"
-    typeorm "^0.1.9"
-    zone.js "0.8.4"
-
-meepo-bmap@^2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-2.1.5.tgz#4a6b0f77f78735ba4419070723dbb8023d5093e6"
+meepo-bmap@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-2.2.0.tgz#68bf317f1095a8e803e184bb57eadd929daadcfe"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
@@ -3734,40 +3678,9 @@ meepo-bmap@^2.1.5:
     typeorm "^0.1.9"
     zone.js "0.8.4"
 
-meepo-citypicker@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/meepo-citypicker/-/meepo-citypicker-1.0.3.tgz#52dda58fa47c1619b4471600ce1a0be436a99aec"
-  dependencies:
-    "@angular/common" "^5.1.0"
-    "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
-    "@angular/platform-browser" "^5.1.0"
-    reflect-metadata "^0.1.10"
-    rxjs "^5.5.5"
-    zone.js "0.8.4"
-
-meepo-core@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-2.1.2.tgz#dc768638114bda2aacbbe16d763e90dc6bf35dd6"
-  dependencies:
-    "@angular/common" "^5.1.0"
-    "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
-    "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
-    mysql "^2.15.0"
-    reflect-metadata "^0.1.10"
-    rxjs "^5.5.5"
-    typeorm "^0.1.9"
-    zone.js "0.8.4"
-
-meepo-core@^2.1.7:
-  version "2.1.7"
-  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-2.1.7.tgz#a7da4a78e04e494f125c454adbb8541947a709fb"
+meepo-core@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-2.2.1.tgz#5f54156ea1eaa7fadb720598c43123df90bcc8cd"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
@@ -5106,7 +5019,7 @@ reduce-function-call@^1.0.1:
   dependencies:
     balanced-match "^0.4.2"
 
-reflect-metadata@^0.1.10, reflect-metadata@^0.1.2, reflect-metadata@~0.1.10:
+reflect-metadata@^0.1.10, reflect-metadata@^0.1.2:
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.10.tgz#b4f83704416acad89988c9b15635d47e03b9344a"
 

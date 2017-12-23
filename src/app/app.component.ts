@@ -1,6 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { CoreService } from 'meepo-core';
-import { BmapService, ApiService } from 'meepo-bmap';
 
 @Component({
   selector: 'app-root',
@@ -16,8 +15,7 @@ export class AppComponent implements OnInit {
   loading: boolean = true;
 
   constructor(
-    public core: CoreService,
-    public bmap: BmapService
+    public core: CoreService
   ) {
 
   }
