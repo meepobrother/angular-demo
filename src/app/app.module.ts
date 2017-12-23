@@ -12,8 +12,8 @@ import { PostTaskPage } from './post-task/post-task';
   ],
   imports: [
     BrowserModule,
-    MeepoCoreServiceModule.forRoot(),
-    XscrollModule.forRoot(),
+    MeepoCoreServiceModule,
+    XscrollModule,
     MeepoCoreModule.forRoot(),
     MeepoBmapModule.forRoot()
   ],

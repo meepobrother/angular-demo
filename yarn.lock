@@ -3658,9 +3658,9 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
-meepo-bmap@^2.3.6:
-  version "2.3.6"
-  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-2.3.6.tgz#c015821ff870b4a2fe54f5df9301555cff96ead3"
+meepo-bmap@^2.3.8:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-2.3.8.tgz#95b0d50956b25f2fc97e6c7d4ac28e913e245f16"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
@@ -3671,8 +3671,8 @@ meepo-bmap@^2.3.6:
     "@nestjs/microservices" "^4.5.1"
     "@nestjs/testing" "^4.5.1"
     "@nestjs/websockets" "^4.5.1"
-    meepo-core "^2.5.1"
-    meepo-xscroll "^1.1.3"
+    meepo-core "^2.5.3"
+    meepo-xscroll "^1.1.5"
     mysql "^2.15.0"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.0"
@@ -3680,9 +3680,9 @@ meepo-bmap@^2.3.6:
     typeorm "^0.1.9"
     zone.js "0.8.4"
 
-meepo-core@^2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-2.5.1.tgz#75f43693fdb2d9d9fa55628017af3f00b2b3dabe"
+meepo-core@^2.5.3:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-2.5.3.tgz#87a05889516d5dfceb063a163918143a0832df82"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
@@ -3693,36 +3693,16 @@ meepo-core@^2.5.1:
     "@nestjs/microservices" "^4.5.1"
     "@nestjs/testing" "^4.5.1"
     "@nestjs/websockets" "^4.5.1"
-    meepo-xscroll "^1.1.3"
+    meepo-xscroll "^1.1.5"
     mysql "^2.15.0"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.5"
     typeorm "^0.1.9"
     zone.js "0.8.4"
 
-meepo-xscroll@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.1.3.tgz#b89e04eafb015df75824c1e4c219b7d85457a8c0"
-  dependencies:
-    "@angular/common" "^5.1.0"
-    "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
-    "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
-    mysql "^2.15.0"
-    reflect-metadata "^0.1.10"
-    rxjs "^5.5.5"
-    typeorm "^0.1.9"
-    xscroll "^3.1.3"
-    zone.js "0.8.4"
-
-meepo-xscroll@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.1.4.tgz#ad6d9b55e890640b4b3ba6bd0203f335b2994794"
+meepo-xscroll@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.1.5.tgz#f64a57c434c399976ec9943b69f7cb2d0c118436"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
