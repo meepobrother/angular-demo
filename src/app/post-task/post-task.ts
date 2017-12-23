@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'post-task',
@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class PostTaskPage implements OnInit {
+    @Input() data: any;
     constructor() { }
 
     ngOnInit() { }

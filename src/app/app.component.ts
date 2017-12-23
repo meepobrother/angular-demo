@@ -14,9 +14,8 @@ export class AppComponent implements OnInit {
   title = 'app';
   @ViewChild('postTask') postTask: TemplateRef<any>;
   btnTitle: string = '在这里下单';
-
   loading: boolean = true;
-
+  postData: any;
   constructor(
     public core: CoreService
   ) {
@@ -34,6 +33,7 @@ export class AppComponent implements OnInit {
   }
 
   onFinish(e: any) {
+    this.postData = e;
     const cfg: any = { tpl: this.postTask };
     this.core.showPopover(cfg);
   }
