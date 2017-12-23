@@ -1,1 +1,24 @@
-{{data|json}}
+<ng-container *ngIf="key === 'start'">
+    <h2 class="title">{{item.address}}</h2>
+    <div class="activity_sticker_arrow_right"></div>
+</ng-container>
+<ng-container *ngIf="key === 'end'">
+    <h2 class="title">{{item.address}}</h2>
+    <div class="activity_sticker_arrow_right"></div>
+</ng-container>
+<ng-container *ngIf="key === 'distance'">
+    <h2 class="title">{{item}}</h2>
+</ng-container>
+<ng-container *ngIf="key === 'duration'">
+    <h2 class="title">{{item}}</h2>
+</ng-container>
+<ng-container *ngIf="key === 'timePrice'">
+    <h2 class="title">{{item.price}}</h2>
+</ng-container>
+<ng-container *ngIf="key === 'juliItems'">
+    <ul>
+        <li *ngFor="let it of item">
+            {{it.start}}-{{it.end}}={{it.money}}元
+        </li>
+    </ul>
+</ng-container>

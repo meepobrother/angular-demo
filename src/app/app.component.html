@@ -1,6 +1,9 @@
 <core-root>
     <bmap (onHome)="onHome($event)" (onFinish)="onFinish($event)"></bmap>
-    <ng-template #postTask>
-        <post-task [data]="postData"></post-task>
+    <ng-template #postTask let-item>
+        <post-task [data]="item"></post-task>
+    </ng-template>
+    <ng-template #footerTpl>
+        <a href="javascript:;" style="flex: 1;" class="weui-btn weui-btn_primary">提交</a>
     </ng-template>
 </core-root>

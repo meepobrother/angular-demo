@@ -2,7 +2,7 @@ import {
   Component, OnInit, ChangeDetectionStrategy,
   ChangeDetectorRef, TemplateRef, ViewChild
 } from '@angular/core';
-import { CoreService } from 'meepo-core';
+import { CoreService, CorePopoverWidget } from 'meepo-core';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +13,8 @@ import { CoreService } from 'meepo-core';
 export class AppComponent implements OnInit {
   title = 'app';
   @ViewChild('postTask') postTask: TemplateRef<any>;
+  @ViewChild('footerTpl') footerTpl: TemplateRef<any>;
+
   btnTitle: string = '在这里下单';
   loading: boolean = true;
   postData: any;
@@ -34,7 +36,12 @@ export class AppComponent implements OnInit {
 
   onFinish(e: any) {
     this.postData = e;
-    const cfg: any = { tpl: this.postTask };
+    const list: any[] = [];
+    for (const key in this.postData) {
+      list.push({ key: key, data: this.postData[key] });
+    }
+    console.log(list);
+    const cfg: CorePopoverWidget = { headerTpl: null, tpl: this.postTask, list: list, footerTpl: this.footerTpl };
     this.core.showPopover(cfg);
   }
 }

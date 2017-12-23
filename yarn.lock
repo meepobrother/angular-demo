@@ -3658,9 +3658,9 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
-meepo-bmap@^2.3.8:
-  version "2.3.8"
-  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-2.3.8.tgz#95b0d50956b25f2fc97e6c7d4ac28e913e245f16"
+meepo-bmap@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-2.4.2.tgz#b2dfcb625405081f67f368d7b9cecf9559b7a9cc"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"

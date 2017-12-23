@@ -25,7 +25,7 @@
     "@angular/router": "^5.0.0",
     "core-js": "^2.4.1",
     "js-base64": "^2.4.0",
-    "meepo-bmap": "^2.3.8",
+    "meepo-bmap": "^2.4.2",
     "meepo-core": "^2.5.3",
     "meepo-xscroll": "^1.1.5",
     "rxjs": "^5.5.2",
