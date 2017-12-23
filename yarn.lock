@@ -3658,9 +3658,9 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
-meepo-bmap@^2.2.9:
-  version "2.2.9"
-  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-2.2.9.tgz#41395fd65ec8650435412084265a26ae49ff25e5"
+meepo-bmap@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-2.3.2.tgz#0c47d9ce85ac8106464d4ab7af050939ebd59a6f"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
@@ -3671,7 +3671,7 @@ meepo-bmap@^2.2.9:
     "@nestjs/microservices" "^4.5.1"
     "@nestjs/testing" "^4.5.1"
     "@nestjs/websockets" "^4.5.1"
-    meepo-core "^2.4.4"
+    meepo-core "^2.4.5"
     meepo-xscroll "^1.0.9"
     mysql "^2.15.0"
     reflect-metadata "^0.1.10"
@@ -3680,9 +3680,9 @@ meepo-bmap@^2.2.9:
     typeorm "^0.1.9"
     zone.js "0.8.4"
 
-meepo-core@^2.4.4:
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-2.4.4.tgz#40a4154aa81590bf5a0113ab9b3ae9da8df22c12"
+meepo-core@^2.4.5:
+  version "2.4.5"
+  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-2.4.5.tgz#8c7bef0d757ddd1483641638b2a6574301942dd4"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
