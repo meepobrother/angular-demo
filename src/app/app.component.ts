@@ -31,6 +31,7 @@ export class AppComponent implements OnInit {
   }
 
   onHome(e: any) {
+    console.log('on home');
     this.core.showMenu({ show: true });
   }
 
@@ -40,7 +41,6 @@ export class AppComponent implements OnInit {
     for (const key in this.postData) {
       list.push({ key: key, data: this.postData[key] });
     }
-    console.log(list);
     const cfg: CorePopoverWidget = { headerTpl: null, tpl: this.postTask, list: list, footerTpl: this.footerTpl };
     this.core.showPopover(cfg);
   }

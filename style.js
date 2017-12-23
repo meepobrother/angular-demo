@@ -11,7 +11,6 @@ let lessFilePool = [];
 let handledLessFileCount = 0;
 
 let tsFileTester = /\.ts$/;
-
 let stylesRegex = /styleUrls *:(\s*\[[^\]]*?\])/g;
 let htmlRegex = /templateUrl\s*:\s*\'(\S*?)\'/g;
 let imageRegex = /url\([\'\"](\S*?\.png)[\'\"]\)/g;
@@ -86,7 +85,7 @@ function writeBackCss(path) {
     }
 }
 
-function strTrim(str){
+function strTrim(str) {
     return str.replace(/\\e/g, function (match, e) {
         // 对content中的类似'\e630'中的\e进行处理
         return '\\\\e';
@@ -131,7 +130,6 @@ function processLess() {
                                     });
                                     output.css = contentTemp;
                                 }
-                                lessFilePool[index] = strTrim(output.css);
                             }
                             doneOne();
                         })
