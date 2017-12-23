@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MeepoCoreModule, MeepoCoreServiceModule } from 'meepo-core';
 import { MeepoBmapModule } from 'meepo-bmap';
+import { XscrollModule } from 'meepo-xscroll';
 import { PostTaskPage } from './post-task/post-task';
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { PostTaskPage } from './post-task/post-task';
   imports: [
     BrowserModule,
     MeepoCoreServiceModule.forRoot(),
+    XscrollModule.forRoot(),
     MeepoCoreModule.forRoot(),
     MeepoBmapModule.forRoot()
   ],
