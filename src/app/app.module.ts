@@ -1,15 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { MeepoCoreModule, CoreService } from 'meepo-core';
+import { MeepoCoreModule, MeepoCoreServiceModule } from 'meepo-core';
 import { MeepoBmapModule } from 'meepo-bmap';
-
+import { PostTaskPage } from './post-task/post-task';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PostTaskPage
   ],
   imports: [
     BrowserModule,
+    MeepoCoreServiceModule.forRoot(),
     MeepoCoreModule.forRoot(),
     MeepoBmapModule.forRoot()
   ],
