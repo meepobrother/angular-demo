@@ -5,7 +5,7 @@ import { MeepoCoreModule, MeepoCoreServiceModule } from 'meepo-core';
 import { MeepoBmapModule } from 'meepo-bmap';
 import { XscrollModule } from 'meepo-xscroll';
 import { PostTaskPage } from './post-task/post-task';
-
+import { MeepoFormsModule } from 'meepo-forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +16,8 @@ import { PostTaskPage } from './post-task/post-task';
     MeepoCoreServiceModule,
     XscrollModule,
     MeepoCoreModule.forRoot(),
-    MeepoBmapModule.forRoot()
+    MeepoBmapModule.forRoot(),
+    MeepoFormsModule
   ],
   bootstrap: [
     AppComponent

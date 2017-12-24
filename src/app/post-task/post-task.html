@@ -6,53 +6,28 @@
                     <div class="weui-wepay-detail__bd">订单详情</div>
                     <div class="weui-wepay-detail__ft weui-wepay-color-green">￥26.10</div>
                 </div>
-                <div class="weui-wepay-details__bd">
-                    <div class="weui-wepay-detail weui-wepay-detail_primary">
-                        <div class="weui-wepay-detail__bd">订单编号：</div>
-                        <div class="weui-wepay-detail__ft">x123456</div>
-                    </div>
-                </div>
-                <div class="weui-wepay-detail weui-wepay-detail_primary">
-                    <div class="weui-wepay-detail__bd">下单时间：</div>
-                    <div class="weui-wepay-detail__ft">2016-05-06 20:38:47</div>
-                </div>
-                <div class="weui-wepay-detail weui-wepay-detail_primary">
+                <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="data.start.address">
                     <div class="weui-wepay-detail__bd">从：</div>
-                    <div class="weui-wepay-detail__ft">{{data.start?.address}}</div>
+                    <div class="weui-wepay-detail__ft">{{data.start.address}}</div>
                 </div>
-                <div class="weui-wepay-detail weui-wepay-detail_primary">
+                <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="data.end.title">
                     <div class="weui-wepay-detail__bd">到：</div>
-                    <div class="weui-wepay-detail__ft">{{data.end?.address}}</div>
+                    <div class="weui-wepay-detail__ft">{{data.end.title}}</div>
                 </div>
-                <div class="weui-wepay-detail weui-wepay-detail_primary">
+                <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="data.distance">
                     <div class="weui-wepay-detail__bd">总路程：</div>
-                    <div class="weui-wepay-detail__ft">{{data?.distance}}</div>
+                    <div class="weui-wepay-detail__ft">{{data.distance}}</div>
                 </div>
             </div>
         </div>
-        <div class="page-title">已为您自动生产订单</div>
-        <div class="form ticket-form">
-            <div class="ticket-main">
-                <div class="ticket-info flex-box">
-                    <div class="flex-1 station-name">{{data.title?.title}}{{data.type?.title}}</div>
-                    <div class="select day-select">
-                        <select class="text">
-                            <option value="">2015.1.3</option>
-                        </select>
-                        <a href="javascript:" class="arrow-down"></a>
-                    </div>
-                </div>
-                <div class="ticket-info flex-box">
-                    <div class="stime-info flex-1">
-                        {{data.timePrice?.start}}-{{data.timePrice?.end}}
-                        <a href="javascript:;" class="change-link">修改</a>
-                    </div>
-                    <div class="price-info flex-1">
-                        <span class="money-mark">￥</span>{{data.timePrice?.price}}
-                    </div>
-                </div>
-                <div class="other-tips">无须取票，凭微信消息中的条码上车</div>
-            </div>
-        </div>
+        <form-row>
+            <form-input tip="请输入联系人电话">
+                <i class="form_mobile_icon"></i>联系电话
+            </form-input>
+        </form-row>
+        <form-row class="pt10">
+            <form-image>任务附件</form-image>
+            <form-textarea tip="请输入留言"></form-textarea>
+        </form-row>
     </div>
 </div>

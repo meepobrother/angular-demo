@@ -16,9 +16,7 @@ export class AppComponent implements OnInit {
   btnTitle: string = '在这里下单';
   loading: boolean = true;
   postData: any;
-  @Input() popoverWidget: CorePopoverWidget = {
-    show: false
-  };
+  @Input() show: boolean = false;
   constructor(
     public core: CoreService,
     public cd: ChangeDetectorRef
@@ -39,7 +37,12 @@ export class AppComponent implements OnInit {
   onFinish(e: any) {
     this.postData = e;
     console.log(e);
-    this.popoverWidget.show = true;
+    this.show = true;
+    this.cd.detectChanges();
+  }
+
+  cancel() {
+    this.show = false;
     this.cd.detectChanges();
   }
 }
