@@ -3,7 +3,7 @@
 </core-root>
 <!-- // 发布 -->
 <core-popover [online]="false" [show]="show">
-    <post-task *ngIf="show" [data]="postData"></post-task>
+    <post-task [data]="postData"></post-task>
     <div popoverFooter class="post_footer">
         <a href="javascript:;" (click)="cancel()" class="weui-btn weui-btn_default">取消</a>
         <div class="post_footer_item_divider"></div>

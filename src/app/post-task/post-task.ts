@@ -9,7 +9,16 @@ import { CoreService } from 'meepo-core';
     encapsulation: ViewEncapsulation.None
 })
 export class PostTaskPage implements OnInit {
-    @Input() data: PostTaskData = new PostTaskData();
+    _data: PostTaskData = new PostTaskData();
+    @Input()
+    set data(val: any) {
+        if (val) {
+            this._data = val;
+        }
+    }
+    get data() {
+        return this._data;
+    }
 
     constructor() { }
 
