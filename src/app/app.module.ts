@@ -13,7 +13,6 @@ import { MeepoFormsModule } from 'meepo-forms';
   ],
   imports: [
     BrowserModule,
-    MeepoCoreServiceModule,
     XscrollModule,
     MeepoCoreModule.forRoot(),
     MeepoBmapModule.forRoot(),
