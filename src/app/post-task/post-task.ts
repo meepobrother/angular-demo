@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
-
+import { CoreService } from 'meepo-core';
 @Component({
     selector: 'post-task',
     templateUrl: 'post-task.html',
@@ -8,19 +8,24 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } fro
     ],
     encapsulation: ViewEncapsulation.None
 })
-
 export class PostTaskPage implements OnInit {
-    key: string = '';
-    item: any;
-    @Input()
-    set data(val: any) {
-        const { key, data } = val;
-        this.key = key;
-        this.item = data;
-    }
+    @Input() data: PostTaskData = new PostTaskData();
+
     constructor() { }
 
     ngOnInit() {
 
     }
+}
+
+export class PostTaskData {
+    type: any = {};
+    title: any = {};
+    timePrice: any = {};
+    juliItems: any[] = [];
+    start: any = {};
+    end: any = {};
+    duration: number = 0;
+    distance: number = 0;
+    create_time: Date = new Date();
 }

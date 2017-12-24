@@ -1,18 +1,15 @@
-post-task {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    min-height: 40px;
-    padding: 0 10px;
-    .title {
-        flex: 1;
-        font-size: .9em;
+.pay {
+    background: #fff;
+}
+
+.stime-info {
+    &:before {
+        content: "预约时间" !important;
     }
-    ul {
-        flex: 1;
-        li {
-            line-height: 30px;
-            height: 30px;
-        }
+}
+
+.price-info {
+    &:before {
+        content: "加价" !important;
     }
 }

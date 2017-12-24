@@ -1,9 +1,12 @@
 <core-root>
     <bmap (onHome)="onHome($event)" (onFinish)="onFinish($event)"></bmap>
-    <ng-template #postTask let-item>
-        <post-task [data]="item"></post-task>
-    </ng-template>
-    <ng-template #footerTpl>
-        <a href="javascript:;" style="flex: 1;" class="weui-btn weui-btn_primary">提交</a>
-    </ng-template>
 </core-root>
+<!-- // 发布 -->
+<core-popover [online]="false" [show]="popoverWidget.show">
+    <post-task *ngIf="popoverWidget.show" [data]="postData"></post-task>
+    <div popoverFooter class="post_footer">
+        <a href="javascript:;" popoverFooter class="weui-btn weui-btn_default">取消</a>
+        <div class="post_footer_item_divider"></div>
+        <a href="javascript:;" popoverFooter class="weui-btn weui-btn_primary">提交</a>
+    </div>
+</core-popover>

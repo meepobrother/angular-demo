@@ -1,25 +1,27 @@
 import {
   Component, OnInit, ChangeDetectionStrategy,
-  ChangeDetectorRef, TemplateRef, ViewChild
+  ChangeDetectorRef, TemplateRef, ViewChild,
+  Input
 } from '@angular/core';
 import { CoreService, CorePopoverWidget } from 'meepo-core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent implements OnInit {
   title = 'app';
-  @ViewChild('postTask') postTask: TemplateRef<any>;
-  @ViewChild('footerTpl') footerTpl: TemplateRef<any>;
-
   btnTitle: string = '在这里下单';
   loading: boolean = true;
   postData: any;
+  @Input() popoverWidget: CorePopoverWidget = {
+    show: false
+  };
   constructor(
-    public core: CoreService
+    public core: CoreService,
+    public cd: ChangeDetectorRef
   ) {
 
   }
@@ -31,17 +33,13 @@ export class AppComponent implements OnInit {
   }
 
   onHome(e: any) {
-    console.log('on home');
     this.core.showMenu({ show: true });
   }
 
   onFinish(e: any) {
     this.postData = e;
-    const list: any[] = [];
-    for (const key in this.postData) {
-      list.push({ key: key, data: this.postData[key] });
-    }
-    const cfg: CorePopoverWidget = { headerTpl: null, tpl: this.postTask, list: list, footerTpl: this.footerTpl };
-    this.core.showPopover(cfg);
+    console.log(e);
+    this.popoverWidget.show = true;
+    this.cd.detectChanges();
   }
 }
