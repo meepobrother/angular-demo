@@ -10,13 +10,17 @@
                     <div class="weui-wepay-detail__bd">从：</div>
                     <div class="weui-wepay-detail__ft">{{data.start.address}}</div>
                 </div>
-                <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="data.end.title">
+                <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="data.end.address">
                     <div class="weui-wepay-detail__bd">到：</div>
-                    <div class="weui-wepay-detail__ft">{{data.end.title}}</div>
+                    <div class="weui-wepay-detail__ft">{{data.end.address}}</div>
                 </div>
                 <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="data.distance">
                     <div class="weui-wepay-detail__bd">总路程：</div>
-                    <div class="weui-wepay-detail__ft">{{data.distance}}</div>
+                    <div class="weui-wepay-detail__ft">{{data.distance}}公里</div>
+                </div>
+                <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="data.distance">
+                    <div class="weui-wepay-detail__bd">总路时：</div>
+                    <div class="weui-wepay-detail__ft">{{data.duration}}分钟</div>
                 </div>
             </div>
         </div>

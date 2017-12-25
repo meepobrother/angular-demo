@@ -49,6 +49,7 @@ function cssImage(css, file) {
             // 处理css中`符号
             return "'";
         });
+        //处理前缀问题
         postcss([autoprefixer]).process(css).then(result => {
             resolve(result.css);
         });

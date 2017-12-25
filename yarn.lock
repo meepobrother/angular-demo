@@ -27,12 +27,6 @@
     minimist "^1.2.0"
     rxjs "^5.5.2"
 
-"@angular/animations@^5.0.0":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-5.1.1.tgz#007621f8bcac15560e160582eb2e91025b6b9106"
-  dependencies:
-    tslib "^1.7.1"
-
 "@angular/cli@1.6.0":
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-1.6.0.tgz#eba521f6a8e4c2db628300baddbc4da13ca96998"
@@ -98,14 +92,14 @@
     node-sass "^4.3.0"
 
 "@angular/common@^5.0.0", "@angular/common@^5.1.0":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@angular/common/-/common-5.1.1.tgz#b6444cf6508f9b0b5fc4c9b3107b3e37be1336c9"
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-5.1.2.tgz#b2659161575d463bb8b3e30e37434b26d70366b4"
   dependencies:
     tslib "^1.7.1"
 
 "@angular/compiler-cli@^5.0.0":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-5.1.1.tgz#579e6846ed493e7202e36eb5cea00cb1a61c927c"
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-5.1.2.tgz#70addc11b6528f087abe809f94acedecdfc9c8f6"
   dependencies:
     chokidar "^1.4.2"
     minimist "^1.2.0"
@@ -113,62 +107,50 @@
     tsickle "^0.25.5"
 
 "@angular/compiler@^5.0.0":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-5.1.1.tgz#7d7953229739e68de74ea821685e1d5569527ef3"
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-5.1.2.tgz#4dfd0dd7fab39a14a1a104097c2f6af470ddabdb"
   dependencies:
     tslib "^1.7.1"
 
 "@angular/core@^5.0.0", "@angular/core@^5.1.0":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-5.1.1.tgz#b6a6e2b2284f86279f096d857253f6643098d908"
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-5.1.2.tgz#751070c0f4e5a8c4e2170204e08eca06391b84b1"
   dependencies:
     tslib "^1.7.1"
 
-"@angular/forms@^5.0.0", "@angular/forms@^5.1.0":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-5.1.1.tgz#e38858a44e7b57b61f375087b76a79d6e2679b14"
-  dependencies:
-    tslib "^1.7.1"
-
-"@angular/http@^5.0.0":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@angular/http/-/http-5.1.1.tgz#45aa61ee61f212a34f958c444c999e8c9352ec23"
+"@angular/forms@^5.1.0":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-5.1.2.tgz#fae4934ccdd41443efdee49b754c8b2a5587b12c"
   dependencies:
     tslib "^1.7.1"
 
 "@angular/language-service@^5.0.0":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-5.1.1.tgz#731533a3b6ee4c8facda862a836db1930a011f07"
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-5.1.2.tgz#0c0579c2feb7dd9afb2576e9b602779d45b30810"
 
 "@angular/platform-browser-dynamic@^5.0.0":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-5.1.1.tgz#4b7bd1cbdb3c93fdeb626b38fbd54286a73a76d0"
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-5.1.2.tgz#120d49ce16bcb91b8ac1c5e5c634fba592359ad7"
   dependencies:
     tslib "^1.7.1"
 
 "@angular/platform-browser@^5.0.0", "@angular/platform-browser@^5.1.0":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-5.1.1.tgz#88a05132d822b760c9108a3eaf0da610f39c2ed9"
-  dependencies:
-    tslib "^1.7.1"
-
-"@angular/router@^5.0.0":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@angular/router/-/router-5.1.1.tgz#378e69edd28edadaff7b09b6ee407aadf7164220"
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-5.1.2.tgz#6faf926b9b41b6d54d873f3dcc4f31ad35fd0c38"
   dependencies:
     tslib "^1.7.1"
 
 "@nestjs/common@^4.5.1":
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-4.5.1.tgz#36c9ead2987be56d5ecc78de58220857c651b103"
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-4.5.2.tgz#cbe6f97b8f2b74310fb8ead4311b8c5cf1bf00d4"
   dependencies:
     class-transformer "0.1.8"
     class-validator "0.7.3"
     cli-color "1.1.0"
 
 "@nestjs/core@^4.5.1":
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-4.5.1.tgz#f38c3582d6e7d9bc6e5b266d345fa00e89652ebf"
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-4.5.2.tgz#5eff62117e30d9c5459d00377686ee15ad325894"
   dependencies:
     body-parser "1.17.2"
     express "4.16.2"
@@ -176,8 +158,8 @@
     optional "0.1.4"
 
 "@nestjs/microservices@^4.5.1":
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-4.5.1.tgz#05c4e2c57e23e012847e868946af4458fa976f33"
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-4.5.2.tgz#0426bf2d264963a5669e631da7ab295b40fd2c16"
   dependencies:
     iterare "0.0.8"
     json-socket "^0.2.1"
@@ -185,14 +167,14 @@
     redis "^2.7.1"
 
 "@nestjs/testing@^4.5.1":
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-4.5.1.tgz#7344827058622c2b6cc35ed2096ca2e308b8d558"
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-4.5.2.tgz#d174979f1c0b93378513dc7c753be84f602814bf"
   dependencies:
     optional "0.1.4"
 
 "@nestjs/websockets@^4.5.1":
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/websockets/-/websockets-4.5.1.tgz#99a3d508e49af36ad7262697f3154e1cdfca2fee"
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/websockets/-/websockets-4.5.2.tgz#1a4254f027991592ee7a41cd586b7393a1bc0d1b"
   dependencies:
     iterare "0.0.8"
     socket.io "^2.0.3"
@@ -238,12 +220,12 @@
     "@types/jasmine" "*"
 
 "@types/node@*":
-  version "8.5.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.1.tgz#4ec3020bcdfe2abffeef9ba3fbf26fca097514b5"
+  version "8.5.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.2.tgz#83b8103fa9a2c2e83d78f701a9aa7c9539739aa5"
 
 "@types/node@^6.0.46", "@types/node@~6.0.60":
-  version "6.0.94"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.94.tgz#70e509b07ed9f961c8f6f4a73a61d922be5029a7"
+  version "6.0.95"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.95.tgz#0d027612a77c55b84497ff90a4a7d597e5ac0fab"
 
 "@types/q@^0.0.32":
   version "0.0.32"
@@ -549,6 +531,13 @@ aws4@^1.2.1, aws4@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
 
+axios@^0.17.1:
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.17.1.tgz#2d8e3e5d0bdbd7327f91bc814f5c57660f81824d"
+  dependencies:
+    follow-redirects "^1.2.5"
+    is-buffer "^1.1.5"
+
 babel-code-frame@^6.11.0, babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-code-frame/-/babel-code-frame-6.26.0.tgz#63fd43f7dc1e3bb7ce35947db8fe369a3f58c74b"
@@ -691,6 +680,10 @@ blocking-proxy@0.0.5:
 bluebird@^3.3.0, bluebird@^3.4.7, bluebird@^3.5.0:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
+
+blueimp-md5@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/blueimp-md5/-/blueimp-md5-2.10.0.tgz#02f0843921f90dca14f5b8920a38593201d6964d"
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
   version "4.11.8"
@@ -944,8 +937,8 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000783"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000783.tgz#16b30d47266a4f515cc69ae0316b670c9603cdbe"
+  version "1.0.30000784"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000784.tgz#1be95012d9489c7719074f81aee57dbdffe6361b"
 
 caniuse-lite@^1.0.30000780, caniuse-lite@^1.0.30000783:
   version "1.0.30000784"
@@ -1180,8 +1173,8 @@ commander@2.12.x, commander@^2.9.0, commander@~2.12.1:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.12.2.tgz#0f5946c427ed9ec0d91a46bb9def53e54650e555"
 
 common-tags@^1.3.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/common-tags/-/common-tags-1.5.1.tgz#e2e39931a013cd02253defeed89a1ad615a27f07"
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/common-tags/-/common-tags-1.6.0.tgz#788e4bcc582f16993e5b2c92f76b1ccb80731537"
   dependencies:
     babel-runtime "^6.26.0"
 
@@ -1294,8 +1287,8 @@ copy-concurrently@^1.0.0:
     run-queue "^1.0.0"
 
 copy-webpack-plugin@^4.1.1:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/copy-webpack-plugin/-/copy-webpack-plugin-4.3.0.tgz#cfdf4d131c78d66917a1bb863f86630497aacf42"
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/copy-webpack-plugin/-/copy-webpack-plugin-4.3.1.tgz#19ba6370bf6f8e263cbd66185a2b79f2321a9302"
   dependencies:
     cacache "^10.0.1"
     find-cache-dir "^1.0.0"
@@ -1801,11 +1794,7 @@ electron-releases@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/electron-releases/-/electron-releases-2.1.0.tgz#c5614bf811f176ce3c836e368a0625782341fd4e"
 
-electron-to-chromium@^1.2.7:
-  version "1.3.28"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.28.tgz#8dd4e6458086644e9f9f0a1cf32e2a1f9dffd9ee"
-
-electron-to-chromium@^1.3.28:
+electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.28:
   version "1.3.30"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.30.tgz#9666f532a64586651fc56a72513692e820d06a80"
   dependencies:
@@ -2338,6 +2327,12 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.1"
     readable-stream "^2.0.4"
 
+follow-redirects@^1.2.5:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.2.6.tgz#4dcdc7e4ab3dd6765a97ff89c3b4c258117c79bf"
+  dependencies:
+    debug "^3.1.0"
+
 for-in@^0.1.3:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-0.1.8.tgz#d8773908e31256109952b1fdb9b3fa867d2775e1"
@@ -2767,8 +2762,8 @@ html-entities@^1.2.0:
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.1.tgz#0df29351f0721163515dfb9e5543e5f6eed5162f"
 
 html-minifier@^3.2.3:
-  version "3.5.7"
-  resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-3.5.7.tgz#511e69bb5a8e7677d1012ebe03819aa02ca06208"
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-3.5.8.tgz#5ccdb1f73a0d654e6090147511f6e6b2ee312700"
   dependencies:
     camel-case "3.0.x"
     clean-css "4.1.x"
@@ -2777,7 +2772,7 @@ html-minifier@^3.2.3:
     ncname "1.0.x"
     param-case "2.1.x"
     relateurl "0.2.x"
-    uglify-js "3.2.x"
+    uglify-js "3.3.x"
 
 html-webpack-plugin@^2.29.0:
   version "2.30.1"
@@ -3191,7 +3186,7 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-istanbul-api@^1.1.8:
+istanbul-api@^1.1.14:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/istanbul-api/-/istanbul-api-1.2.1.tgz#0c60a0515eb11c7d65c6b50bba2c6e999acd8620"
   dependencies:
@@ -3398,10 +3393,10 @@ karma-cli@~1.0.1:
     resolve "^1.1.6"
 
 karma-coverage-istanbul-reporter@^1.2.1:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/karma-coverage-istanbul-reporter/-/karma-coverage-istanbul-reporter-1.3.0.tgz#d142cd9c55731c9e363ef7374e8ef1a31bebfadb"
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/karma-coverage-istanbul-reporter/-/karma-coverage-istanbul-reporter-1.3.1.tgz#1baabd5afd038d107a14ac2ce11ee27f3dc67384"
   dependencies:
-    istanbul-api "^1.1.8"
+    istanbul-api "^1.1.14"
     minimatch "^3.0.4"
 
 karma-jasmine-html-reporter@^0.2.2:
@@ -3694,41 +3689,54 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
-meepo-autosize@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/meepo-autosize/-/meepo-autosize-1.0.5.tgz#d098a0841a1792fce3da36bf5e962ad48cd0a0c0"
+meepo-autosize@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/meepo-autosize/-/meepo-autosize-1.0.8.tgz#97d8becb386a99028f1f2ac5e4193c9fda3ba07e"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
     "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
     autosize "^4.0.0"
-    mysql "^2.15.0"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.5"
-    typeorm "^0.1.9"
     zone.js "0.8.4"
 
-meepo-bmap@^2.4.9:
-  version "2.4.9"
-  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-2.4.9.tgz#d3ee3e6e59ff35eb083aba7ccbd3a59ef560d095"
+meepo-axios@^1.1.6, meepo-axios@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/meepo-axios/-/meepo-axios-1.1.8.tgz#8de5bbd4082f3af44cef85e6814265ab7135966f"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
     "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
-    meepo-core "^2.6.3"
-    meepo-xscroll "^1.1.7"
+    axios "^0.17.1"
+    meepo-base64 "^1.0.9"
+    meepo-core "^2.8.0"
+    reflect-metadata "~0.1.10"
+    rxjs "^5.5.0"
+    zone.js "0.8.4"
+
+meepo-base64@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/meepo-base64/-/meepo-base64-1.0.9.tgz#4150cf63808818cdfa5c7f98dd57d82e9f2f7717"
+  dependencies:
+    "@angular/common" "^5.1.0"
+    "@angular/core" "^5.1.0"
+    "@angular/platform-browser" "^5.1.0"
+    js-base64 "^2.4.0"
+    reflect-metadata "^0.1.10"
+    rxjs "^5.5.5"
+    zone.js "0.8.4"
+
+meepo-bmap@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-2.8.0.tgz#da140002ab90c67c1424b835fbff22b37729ef97"
+  dependencies:
+    "@angular/common" "^5.1.0"
+    "@angular/core" "^5.1.0"
+    "@angular/platform-browser" "^5.1.0"
+    meepo-axios "^1.1.6"
+    meepo-base64 "^1.0.9"
+    meepo-core "^2.9.2"
     mysql "^2.15.0"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.0"
@@ -3736,136 +3744,60 @@ meepo-bmap@^2.4.9:
     typeorm "^0.1.9"
     zone.js "0.8.4"
 
-meepo-bmap@^2.5.7:
-  version "2.5.7"
-  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-2.5.7.tgz#c96308c45a07b2cf5a92a81810d200f673b93b03"
+meepo-core@^2.8.0, meepo-core@^2.9.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-2.9.2.tgz#3cbd6112b7b136fe811f9f96467e2bc5f686a204"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
     "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
-    meepo-core "^2.7.3"
-    meepo-xscroll "^1.2.1"
-    mysql "^2.15.0"
-    reflect-metadata "^0.1.10"
-    rxjs "^5.5.0"
-    store "^2.0.12"
-    typeorm "^0.1.9"
-    zone.js "0.8.4"
-
-meepo-core@^2.6.3:
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-2.6.3.tgz#456b44fc6f73175b948dba52b1af81fa8aa0f595"
-  dependencies:
-    "@angular/common" "^5.1.0"
-    "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
-    "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
-    meepo-xscroll "^1.1.7"
+    meepo-xscroll "^1.2.8"
     mysql "^2.15.0"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.5"
     typeorm "^0.1.9"
     zone.js "0.8.4"
 
-meepo-core@^2.6.6, meepo-core@^2.6.7:
-  version "2.6.7"
-  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-2.6.7.tgz#a41326351838674b06f463da71d70a9db7cef57b"
+meepo-forms@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.1.1.tgz#abec97c10bf48364c10238043805d1c1ccc42abc"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
     "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
-    meepo-xscroll "^1.1.7"
+    meepo-autosize "^1.0.8"
+    meepo-bmap "^2.8.0"
+    meepo-uploader "^1.0.7"
+    meepo-uuid "^1.0.5"
     mysql "^2.15.0"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.5"
     typeorm "^0.1.9"
     zone.js "0.8.4"
 
-meepo-core@^2.7.3:
-  version "2.7.3"
-  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-2.7.3.tgz#209a351be7a4f8cdfa3d187b080f5567b1d2359f"
-  dependencies:
-    "@angular/common" "^5.1.0"
-    "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
-    "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
-    meepo-xscroll "^1.2.1"
-    mysql "^2.15.0"
-    reflect-metadata "^0.1.10"
-    rxjs "^5.5.5"
-    typeorm "^0.1.9"
-    zone.js "0.8.4"
-
-meepo-forms@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.0.4.tgz#a48965b6c4dffc1522984737dadfa998494dddd0"
-  dependencies:
-    "@angular/common" "^5.1.0"
-    "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
-    "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
-    meepo-autosize "^1.0.5"
-    meepo-bmap "^2.4.9"
-    meepo-core "^2.6.7"
-    meepo-uploader "^1.0.3"
-    meepo-uuid "^1.0.0"
-    meepo-xscroll "^1.1.7"
-    mysql "^2.15.0"
-    reflect-metadata "^0.1.10"
-    rxjs "^5.5.5"
-    typeorm "^0.1.9"
-    zone.js "0.8.4"
-
-meepo-uploader@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/meepo-uploader/-/meepo-uploader-1.0.3.tgz#b8737ca5a939e6d953105b0f9d9f9f394ca2b0ea"
-  dependencies:
-    "@angular/common" "^5.1.0"
-    "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
-    "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
-    meepo-core "^2.6.6"
-    mysql "^2.15.0"
-    reflect-metadata "^0.1.10"
-    rxjs "^5.5.5"
-    typeorm "^0.1.9"
-    zone.js "0.8.4"
-
-meepo-uuid@^1.0.0:
+meepo-md5@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/meepo-uuid/-/meepo-uuid-1.0.0.tgz#24f69637c0e40aa71394b2fcc1907f77699dbab3"
+  resolved "https://registry.yarnpkg.com/meepo-md5/-/meepo-md5-1.0.0.tgz#90ca3018f62ee7ff245784af27969d37d0f76308"
+  dependencies:
+    "@angular/common" "^5.1.0"
+    "@angular/core" "^5.1.0"
+    "@angular/forms" "^5.1.0"
+    "@angular/platform-browser" "^5.1.0"
+    "@nestjs/common" "^4.5.1"
+    "@nestjs/core" "^4.5.1"
+    "@nestjs/microservices" "^4.5.1"
+    "@nestjs/testing" "^4.5.1"
+    "@nestjs/websockets" "^4.5.1"
+    blueimp-md5 "^2.10.0"
+    mysql "^2.15.0"
+    reflect-metadata "^0.1.10"
+    rxjs "^5.5.5"
+    typeorm "^0.1.9"
+    zone.js "0.8.4"
+
+meepo-swipe@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/meepo-swipe/-/meepo-swipe-1.0.2.tgz#f37c857d477f4d97be139e1978b1a084ad7872aa"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
@@ -3877,69 +3809,59 @@ meepo-uuid@^1.0.0:
     "@nestjs/testing" "^4.5.1"
     "@nestjs/websockets" "^4.5.1"
     mysql "^2.15.0"
+    reflect-metadata "^0.1.10"
+    rxjs "^5.5.5"
+    typeorm "^0.1.9"
+    zone.js "0.8.4"
+
+meepo-uploader@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/meepo-uploader/-/meepo-uploader-1.0.7.tgz#3eb810955bcbee4b17b37c30fe01803cff4c0923"
+  dependencies:
+    "@angular/common" "^5.1.0"
+    "@angular/core" "^5.1.0"
+    "@angular/platform-browser" "^5.1.0"
+    meepo-core "^2.8.0"
+    reflect-metadata "^0.1.10"
+    rxjs "^5.5.5"
+    typeorm "^0.1.9"
+    zone.js "0.8.4"
+
+meepo-uploader@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/meepo-uploader/-/meepo-uploader-1.0.8.tgz#c09753b1c0448fede9365264cde735b4661784ad"
+  dependencies:
+    "@angular/common" "^5.1.0"
+    "@angular/core" "^5.1.0"
+    "@angular/platform-browser" "^5.1.0"
+    meepo-core "^2.8.0"
+    reflect-metadata "^0.1.10"
+    rxjs "^5.5.5"
+    typeorm "^0.1.9"
+    zone.js "0.8.4"
+
+meepo-uuid@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/meepo-uuid/-/meepo-uuid-1.0.5.tgz#3d548eed63e70f25e2227d886d56da52a930a7f0"
+  dependencies:
+    "@angular/common" "^5.1.0"
+    "@angular/core" "^5.1.0"
+    "@angular/platform-browser" "^5.1.0"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.5"
     typeorm "^0.1.9"
     uuid "^3.1.0"
     zone.js "0.8.4"
 
-meepo-xscroll@^1.1.7:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.1.7.tgz#c831e57a877a5eaf86777ffed00d2b9608acc017"
+meepo-xscroll@^1.2.8:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.2.8.tgz#9d604248f89c5f58e5a14295a962d0fbc9162c74"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
     "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
-    mysql "^2.15.0"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.5"
-    typeorm "^0.1.9"
-    xscroll "^3.1.3"
-    zone.js "0.8.4"
-
-meepo-xscroll@^1.1.9:
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.1.9.tgz#7dea628ee4a75d78e9cbe70965d174907cb53dfe"
-  dependencies:
-    "@angular/common" "^5.1.0"
-    "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
-    "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
-    mysql "^2.15.0"
-    reflect-metadata "^0.1.10"
-    rxjs "^5.5.5"
-    typeorm "^0.1.9"
-    xscroll "^3.1.3"
-    zone.js "0.8.4"
-
-meepo-xscroll@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.2.1.tgz#50cedbca879d13e965aea8053e38d374060c9368"
-  dependencies:
-    "@angular/common" "^5.1.0"
-    "@angular/core" "^5.1.0"
-    "@angular/forms" "^5.1.0"
-    "@angular/platform-browser" "^5.1.0"
-    "@nestjs/common" "^4.5.1"
-    "@nestjs/core" "^4.5.1"
-    "@nestjs/microservices" "^4.5.1"
-    "@nestjs/testing" "^4.5.1"
-    "@nestjs/websockets" "^4.5.1"
-    mysql "^2.15.0"
-    reflect-metadata "^0.1.10"
-    rxjs "^5.5.5"
-    typeorm "^0.1.9"
     xscroll "^3.1.3"
     zone.js "0.8.4"
 
@@ -5245,7 +5167,7 @@ reduce-function-call@^1.0.1:
   dependencies:
     balanced-match "^0.4.2"
 
-reflect-metadata@^0.1.10, reflect-metadata@^0.1.2:
+reflect-metadata@^0.1.10, reflect-metadata@^0.1.2, reflect-metadata@~0.1.10:
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.10.tgz#b4f83704416acad89988c9b15635d47e03b9344a"
 
@@ -5454,8 +5376,8 @@ run-queue@^1.0.0, run-queue@^1.0.3:
     aproba "^1.1.1"
 
 rxjs@^5.5.0, rxjs@^5.5.2, rxjs@^5.5.5:
-  version "5.5.5"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.5.tgz#e164f11d38eaf29f56f08c3447f74ff02dd84e97"
+  version "5.5.6"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.6.tgz#e31fb96d6fd2ff1fd84bcea8ae9c02d007179c02"
   dependencies:
     symbol-observable "1.0.1"
 
@@ -6225,8 +6147,8 @@ tsconfig@^6.0.0:
     strip-json-comments "^2.0.0"
 
 tsickle@^0.25.5:
-  version "0.25.5"
-  resolved "https://registry.yarnpkg.com/tsickle/-/tsickle-0.25.5.tgz#2891d29f97c4aab1306e06378d8496d1765a4bfe"
+  version "0.25.6"
+  resolved "https://registry.yarnpkg.com/tsickle/-/tsickle-0.25.6.tgz#b595db16b236721824eeeda8bb262365b47ef334"
   dependencies:
     minimist "^1.2.0"
     mkdirp "^0.5.1"
@@ -6253,8 +6175,8 @@ tslint@~5.7.0:
     tsutils "^2.8.1"
 
 tsutils@^2.8.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-2.13.1.tgz#d6d1cc0f7c04cf9fb3b28a292973cffb9cfbe09a"
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-2.14.0.tgz#bc5291622aa2448c1baffc544bcc14ecfa528fb7"
   dependencies:
     tslib "^1.8.0"
 
@@ -6313,15 +6235,15 @@ typescript@~2.6.1:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.2.tgz#3c5b6fd7f6de0914269027f03c0946758f7673a4"
 
 uglify-es@^3.2.1:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.2.2.tgz#15c62b7775002c81b7987a1c49ecd3f126cace73"
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.3.0.tgz#a4acd1cf31f2768ec4d2e72adb739d7018de93aa"
   dependencies:
     commander "~2.12.1"
     source-map "~0.6.1"
 
-uglify-js@3.2.x:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.2.2.tgz#870e4b34ed733d179284f9998efd3293f7fd73f6"
+uglify-js@3.3.x:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.3.1.tgz#bed6f6a2e2b3f1a73dfe000f04d47ee540dd080b"
   dependencies:
     commander "~2.12.1"
     source-map "~0.6.1"
@@ -6431,10 +6353,6 @@ url-parse@^1.1.8:
   dependencies:
     querystringify "~1.0.0"
     requires-port "~1.0.0"
-
-url-search-params@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/url-search-params/-/url-search-params-0.10.0.tgz#d428c1fa9d78d5c5a3feb634147873890f4adcf0"
 
 url@^0.11.0:
   version "0.11.0"
@@ -6680,10 +6598,6 @@ websocket-driver@>=0.5.1:
 websocket-extensions@>=0.1.1:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
-
-weui@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/weui/-/weui-1.1.2.tgz#e33f771e2248edfe0fd07a2c6eadb3e7931a00cc"
 
 when@~3.6.x:
   version "3.6.4"

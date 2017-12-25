@@ -1,11 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { AppComponent } from './app.component';
-import { MeepoCoreModule, MeepoCoreServiceModule } from 'meepo-core';
+
+import { MeepoCoreModule } from 'meepo-core';
 import { MeepoBmapModule } from 'meepo-bmap';
-import { XscrollModule } from 'meepo-xscroll';
-import { PostTaskPage } from './post-task/post-task';
 import { MeepoFormsModule } from 'meepo-forms';
+import { PostTaskPage } from './post-task/post-task';
+
+export class MyErrorHandler implements ErrorHandler {
+  handleError(error) {
+    console.log(error);
+  }
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,14 +19,15 @@ import { MeepoFormsModule } from 'meepo-forms';
   ],
   imports: [
     BrowserModule,
-    XscrollModule,
     MeepoCoreModule.forRoot(),
-    MeepoBmapModule.forRoot(),
+    MeepoBmapModule,
     MeepoFormsModule
   ],
   bootstrap: [
     AppComponent
   ],
-  providers: []
+  providers: [
+    { provide: ErrorHandler, useClass: MyErrorHandler }
+  ]
 })
 export class AppModule { }
