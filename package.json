@@ -22,7 +22,7 @@
     "core-js": "^2.4.1",
     "meepo-bmap": "^2.8.2",
     "meepo-core": "^2.9.4",
-    "meepo-forms": "^1.2.5",
+    "meepo-forms": "^1.2.6",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },

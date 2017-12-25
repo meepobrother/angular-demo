@@ -3555,9 +3555,9 @@ meepo-core@^2.9.4:
     typeorm "^0.1.9"
     zone.js "0.8.4"
 
-meepo-forms@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.2.5.tgz#724fc7b09591956ccd7c0d2020e33321c1db51ee"
+meepo-forms@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.2.6.tgz#40c694071d43fef45dc795d096576fc895541d37"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"
@@ -3565,15 +3565,15 @@ meepo-forms@^1.2.5:
     meepo-autosize "^1.0.9"
     meepo-bmap "^2.8.2"
     meepo-core "^2.9.4"
-    meepo-uploader "^1.1.9"
+    meepo-uploader "^1.2.2"
     meepo-uuid "^1.0.8"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.5"
     zone.js "0.8.4"
 
-meepo-uploader@^1.1.9:
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/meepo-uploader/-/meepo-uploader-1.1.9.tgz#5f94f2a04bbd0efc918ae301ba324b0183dca550"
+meepo-uploader@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/meepo-uploader/-/meepo-uploader-1.2.2.tgz#103484a009b9c193c6db593e7182633da4a15fba"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"
@@ -3581,8 +3581,8 @@ meepo-uploader@^1.1.9:
     meepo-core "^2.9.4"
     meepo-uuid "^1.0.8"
     reflect-metadata "^0.1.10"
-    rxjs "^5.5.5"
-    zone.js "0.8.4"
+    rxjs "^5.5.0"
+    zone.js "^0.8.4"
 
 meepo-uuid@^1.0.8:
   version "1.0.8"
@@ -6500,6 +6500,6 @@ zone.js@0.8.4:
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.4.tgz#cc40ae5a1c879601c5ebba2096b5c80f0c4c3602"
 
-zone.js@^0.8.14:
+zone.js@^0.8.14, zone.js@^0.8.4:
   version "0.8.18"
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.18.tgz#8cecb3977fcd1b3090562ff4570e2847e752b48d"
