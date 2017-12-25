@@ -9,7 +9,10 @@ import { PostTaskPage } from './post-task/post-task';
 
 export class MyErrorHandler implements ErrorHandler {
   handleError(error) {
-    console.log(error);
+    if (error) {
+      const vConsole = new window['VConsole']();
+      console.log('Hello world');
+    }
   }
 }
 @NgModule({
