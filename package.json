@@ -5,7 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
-    "build": "ng build --prod",
+    "build": "yarn upgrade && ng build --prod",
+    "build2": "yarn upgrade && ng build --pord -d ../addons/imeepos_runnerpro/template/mobile/v3/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -24,6 +25,7 @@
     "meepo-bmap": ">=2.8.4",
     "meepo-core": "^=3.0.0",
     "meepo-forms": ">=1.2.6",
+    "meepo-uploader": ">=1.2.7",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },

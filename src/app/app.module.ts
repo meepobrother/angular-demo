@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { MeepoCoreModule } from 'meepo-core';
 import { MeepoBmapModule } from 'meepo-bmap';
 import { MeepoFormsModule } from 'meepo-forms';
+import { UploaderModule } from 'meepo-uploader';
+
 import { PostTaskPage } from './post-task/post-task';
 
 export class MyErrorHandler implements ErrorHandler {
@@ -25,7 +27,8 @@ export class MyErrorHandler implements ErrorHandler {
     BrowserModule,
     MeepoCoreModule.forRoot(),
     MeepoBmapModule,
-    MeepoFormsModule
+    MeepoFormsModule,
+    UploaderModule
   ],
   bootstrap: [
     AppComponent
