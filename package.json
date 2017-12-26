@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "git": "git add . && git commit -m 'save to back' && git push origin master",
-    "ngc": "ngc -p src/tsconfig.app.json"
+    "ngc": "ngc -p src/tsconfig.app.json",
+    "up": "yarn upgrade"
   },
   "private": true,
   "dependencies": {
@@ -20,9 +21,9 @@
     "@angular/platform-browser": "5.2.0-beta.1",
     "@angular/platform-browser-dynamic": "5.2.0-beta.1",
     "core-js": "^2.4.1",
-    "meepo-bmap": "^2.8.2",
-    "meepo-core": "^2.9.4",
-    "meepo-forms": "^1.2.6",
+    "meepo-bmap": ">=2.8.4",
+    "meepo-core": "^=3.0.0",
+    "meepo-forms": ">=1.2.6",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },

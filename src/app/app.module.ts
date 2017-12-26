@@ -10,8 +10,9 @@ import { PostTaskPage } from './post-task/post-task';
 export class MyErrorHandler implements ErrorHandler {
   handleError(error) {
     if (error) {
-      const vConsole = new window['VConsole']();
-      console.log('Hello world');
+      // const vConsole = new window['VConsole']();
+      // console.log('Hello world');
+      console.dir(error);
     }
   }
 }

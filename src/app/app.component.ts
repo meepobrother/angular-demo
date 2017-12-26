@@ -28,6 +28,54 @@ export class AppComponent implements OnInit {
     this.core.app$.next({
       title: '发布任务'
     });
+
+    this.core.showMenu({
+      show: false,
+      items: {
+        task: {
+          show: true,
+          cb: () => {
+            console.log('task');
+          }
+        },
+        coach: {
+          show: true,
+          cb: () => {
+            console.log('coach');
+          }
+        },
+        shoper: {
+          show: true,
+          cb: () => {
+            console.log('shoper');
+          }
+        },
+        active: {
+          show: true,
+          cb: () => {
+            console.log('active');
+          }
+        },
+        money: {
+          show: true,
+          cb: () => {
+            console.log('money');
+          }
+        },
+        kefu: {
+          show: true,
+          cb: () => {
+            console.log('kefu');
+          }
+        },
+        setting: {
+          show: true,
+          cb: () => {
+            console.log('setting');
+          }
+        }
+      }
+    });
   }
 
   onHome(e: any) {
