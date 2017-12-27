@@ -4,7 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { CoreService, CorePopoverWidget } from 'meepo-core';
-
+import { PopoverService } from 'meepo-popover';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,9 +17,13 @@ export class AppComponent implements OnInit {
   loading: boolean = true;
   postData: any;
   @Input() show: boolean = false;
+
+
+  @ViewChild('post') _postTpl: TemplateRef<any>;
   constructor(
     public core: CoreService,
-    public cd: ChangeDetectorRef
+    public cd: ChangeDetectorRef,
+    public popover: PopoverService
   ) {
 
   }
@@ -84,7 +88,10 @@ export class AppComponent implements OnInit {
 
   onFinish(e: any) {
     this.postData = e;
-    console.log(e);
+    const popover = this.popover.create(this._postTpl);
+    popover.afterClose().subscribe(res => {
+      console.log(res);
+    });
     this.show = true;
     this.cd.detectChanges();
   }

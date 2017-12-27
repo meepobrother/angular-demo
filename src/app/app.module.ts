@@ -8,13 +8,14 @@ import { MeepoFormsModule } from 'meepo-forms';
 import { UploaderModule } from 'meepo-uploader';
 
 import { PostTaskPage } from './post-task/post-task';
-
+import { PopoverModule } from 'meepo-popover';
 export class MyErrorHandler implements ErrorHandler {
   handleError(error) {
     if (error) {
       // const vConsole = new window['VConsole']();
       // console.log('Hello world');
-      console.dir(error);
+      // console.dir(error);
+      throw error;
     }
   }
 }
@@ -28,13 +29,14 @@ export class MyErrorHandler implements ErrorHandler {
     MeepoCoreModule.forRoot(),
     MeepoBmapModule,
     MeepoFormsModule,
-    UploaderModule
+    UploaderModule,
+    PopoverModule
   ],
   bootstrap: [
     AppComponent
   ],
   providers: [
-    { provide: ErrorHandler, useClass: MyErrorHandler }
+    { provide: ErrorHandler, useClass: ErrorHandler }
   ]
 })
 export class AppModule { }

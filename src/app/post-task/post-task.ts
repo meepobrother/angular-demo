@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 import { CoreService } from 'meepo-core';
+import { Subject } from 'rxjs/Subject';
 @Component({
     selector: 'post-task',
     templateUrl: 'post-task.html',
@@ -10,6 +11,24 @@ import { CoreService } from 'meepo-core';
 })
 export class PostTaskPage implements OnInit {
     _data: PostTaskData = new PostTaskData();
+
+    width$: Subject<any> = new Subject();
+    length$: Subject<any> = new Subject();
+    height$: Subject<any> = new Subject();
+
+    form: any = {
+        weight: {
+            show: false,
+            value: ''
+        },
+        tiji: {
+            show: false,
+            width: '',
+            height: '',
+            length: '',
+            value: ''
+        }
+    };
     @Input()
     set data(val: any) {
         if (val) {
@@ -20,10 +39,29 @@ export class PostTaskPage implements OnInit {
         return this._data;
     }
 
-    constructor() { }
+    constructor() {
+        this.width$.asObservable().combineLatest(this.height$.asObservable(), this.length$.asObservable()).subscribe(res => {
+            this.form.tiji.value = res[0] * res[1] * res[2];
+            console.log(this.form);
+        });
+    }
 
     ngOnInit() {
 
+    }
+
+    widthChange($event) {
+        this.width$.next($event);
+    }
+    heightChange($event) {
+        this.height$.next($event);
+    }
+    lengthChange($event) {
+        this.length$.next($event);
+    }
+
+    changeTiji(e: any) {
+        console.log(e);
     }
 }
 
