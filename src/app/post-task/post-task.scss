@@ -22,11 +22,19 @@
     height: 50px;
 }
 
-.weui-cell__bd{
+.meepo_tip{
     font-size: .8em;
     color: gray;
     margin-right: 10px;
     line-height: 1.2em;
+}
+
+.weui-wepay-detail__ft{
+    a{
+        color: rgba(0, 28, 187, 0.459);
+        margin-left: 5px;
+        font-size: .8em;
+    }
 }
 
 .post_footer{

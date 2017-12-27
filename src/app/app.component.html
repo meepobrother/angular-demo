@@ -2,6 +2,6 @@
     <bmap (onHome)="onHome($event)" (onFinish)="onFinish($event)"></bmap>
 </core-root>
 
-<ng-template #post>
-    <post-task [data]="postData"></post-task>
+<ng-template #post let-ctrl>
+    <post-task [data]="postData" [sn]="sn" [ctrl]="ctrl"></post-task>
 </ng-template>

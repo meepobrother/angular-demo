@@ -3500,8 +3500,8 @@ meepo-base64@^1.1.1:
     zone.js "0.8.4"
 
 meepo-bmap@>=2.8.2, meepo-bmap@>=2.8.4:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-3.2.1.tgz#b14b75970b2d1cbe211824f28d8bcd1349f50cf4"
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-3.2.3.tgz#dfc6a5f6496a977c84ed870579abc0ac992762a3"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"
@@ -3540,8 +3540,8 @@ meepo-core@^2.9.4:
     zone.js "0.8.4"
 
 meepo-forms@>=1.2.6:
-  version "1.3.8"
-  resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.3.8.tgz#e028e8f43f86fe2e867b39b055df69bdca53bc29"
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.4.2.tgz#fe0792a3ad135feda7579627f95827724c6876e3"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"
@@ -3607,8 +3607,8 @@ meepo-ua@>=1.0.0:
     zone.js "0.8.4"
 
 meepo-uploader@>=1.2.3, meepo-uploader@>=1.5.1:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/meepo-uploader/-/meepo-uploader-1.5.3.tgz#f5b97a5fc8ece838666f7056b2323999e4223a38"
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/meepo-uploader/-/meepo-uploader-1.5.4.tgz#057e3aa04b8c3de61e5e63184d6ca25b062b984d"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"
@@ -5867,9 +5867,9 @@ ua-parser-js@^0.7.17:
   version "0.7.17"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.17.tgz#e9ec5f9498b9ec910e7ae3ac626a805c4d09ecac"
 
-uglify-es@^3.2.1:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.3.2.tgz#2401df8be2a433314523753f28810793a40c5462"
+uglify-es@3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.2.2.tgz#15c62b7775002c81b7987a1c49ecd3f126cace73"
   dependencies:
     commander "~2.12.1"
     source-map "~0.6.1"
@@ -5903,15 +5903,15 @@ uglifyjs-webpack-plugin@^0.4.6:
     webpack-sources "^1.0.1"
 
 uglifyjs-webpack-plugin@~1.1.2:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-1.1.4.tgz#e43ad6e736c315024eb99481a7cc9362d6a066be"
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-1.1.5.tgz#5ec4a16da0fd10c96538f715caed10dbdb180875"
   dependencies:
     cacache "^10.0.0"
     find-cache-dir "^1.0.0"
     schema-utils "^0.3.0"
     serialize-javascript "^1.4.0"
     source-map "^0.6.1"
-    uglify-es "^3.2.1"
+    uglify-es "3.2.2"
     webpack-sources "^1.0.1"
     worker-farm "^1.4.1"
 

@@ -5,6 +5,8 @@ import {
 } from '@angular/core';
 import { CoreService, CorePopoverWidget } from 'meepo-core';
 import { PopoverService } from 'meepo-popover';
+import { UuidService } from 'meepo-uuid';
+import { BmapAddressSelectService, BmapService } from 'meepo-bmap';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -18,21 +20,28 @@ export class AppComponent implements OnInit {
   postData: any;
   @Input() show: boolean = false;
 
-
+  sn: string = this.uuid.v1();
   @ViewChild('post') _postTpl: TemplateRef<any>;
   constructor(
     public core: CoreService,
     public cd: ChangeDetectorRef,
-    public popover: PopoverService
+    public popover: PopoverService,
+    public uuid: UuidService,
+    public address: BmapAddressSelectService,
+    public bmap: BmapService
   ) {
-
+    this.address.show$.subscribe(res => {
+      if (this.sn = res.sn) {
+        console.log(res);
+      }
+    });
   }
 
   ngOnInit() {
     this.core.app$.next({
       title: '发布任务'
     });
-
+    console.log(this.bmap);
     this.core.showMenu({
       show: false,
       items: {
@@ -88,6 +97,7 @@ export class AppComponent implements OnInit {
 
   onFinish(e: any) {
     this.postData = e;
+    console.log(e);
     const popover = this.popover.create(this._postTpl);
     popover.afterClose().subscribe(res => {
       console.log(res);

@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve --open",
     "build": "yarn upgrade && ng build --prod",
-    "build2": "yarn upgrade && ng build --prod -d ../addons/imeepos_runnerpro/template/mobile/v3/",
+    "build2": "ng build --prod -d ../addons/imeepos_runnerpro/template/mobile/v3/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

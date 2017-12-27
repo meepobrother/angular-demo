@@ -2,73 +2,60 @@
     <div class="main">
         <div class="weui-wepay-details">
             <div class="weui-wepay-details__hd">
-                <div class="weui-wepay-detail">
-                    <div class="weui-wepay-detail__bd">订单详情</div>
-                    <div class="weui-wepay-detail__ft weui-wepay-color-green"></div>
-                </div>
-                <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="data.start.address">
+                <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="_data.start.address">
                     <div class="weui-wepay-detail__bd">从：</div>
-                    <div class="weui-wepay-detail__ft">{{data.start.address}}</div>
+                    <div class="weui-wepay-detail__ft">
+                        {{_data.start.title || _data.start.address}}
+                        <a (click)="rePickStart()">修改</a>
+                    </div>
                 </div>
-                <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="data.end.address">
+                <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="_data.end.address">
                     <div class="weui-wepay-detail__bd">到：</div>
-                    <div class="weui-wepay-detail__ft">{{data.end.address}}</div>
+                    <div class="weui-wepay-detail__ft">
+                        {{_data.end.title || _data.end.address}}
+                        <a (click)="rePickEnd()">修改</a>
+                    </div>
                 </div>
-                <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="data.distance">
+                <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="_data.distance">
                     <div class="weui-wepay-detail__bd">总路程：</div>
-                    <div class="weui-wepay-detail__ft">{{data.distance}}公里</div>
+                    <div class="weui-wepay-detail__ft">{{_data.distance}}公里</div>
                 </div>
-                <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="data.distance">
+                <div class="weui-wepay-detail weui-wepay-detail_primary" *ngIf="_data.distance">
                     <div class="weui-wepay-detail__bd">总路时：</div>
-                    <div class="weui-wepay-detail__ft">{{data.duration}}分钟</div>
+                    <div class="weui-wepay-detail__ft">{{_data.duration}}分钟</div>
                 </div>
             </div>
         </div>
-        <form-row>
-            <form-address tip="请选择" [model]="data.start">
-                开始地
-            </form-address>
-        </form-row>
-        <form-row>
-            <form-address tip="请选择" [model]="data.end">
-                目的地
-            </form-address>
-        </form-row>
         <form-row>
             <form-input tip="请输入联系人电话">
                 <i class="form_mobile_icon"></i>联系电话
             </form-input>
         </form-row>
+        <form-switch [(model)]="form.weight.show">
+            <p class="meepo_tip">5公斤以上必须注明真实重量，以便跑腿员选择合适的交通工具！</p>
+        </form-switch>
+        <div *ngIf="form.weight.show">
+            <form-input tip="请输入重量">
+                重量
+            </form-input>
+        </div>
+        <form-switch [(model)]="form.tiji.show">
+            <p class="meepo_tip">非常规体积请务必填写物品尺寸，以便选择合适交通工具！</p>
+        </form-switch>
+        <div class="row" *ngIf="form.tiji.show">
+            <form-input type="number" (modelChange)="lengthChange($event)" [(model)]="form.tiji.length" tip="请输入长度">
+                长度
+            </form-input>
+            <form-input type="number" (modelChange)="widthChange($event)" [(model)]="form.tiji.width" tip="请输入宽度">
+                宽度
+            </form-input>
+            <form-input type="number" (modelChange)="heightChange($event)" [(model)]="form.tiji.height" tip="请输入高度">
+                高度
+            </form-input>
+        </div>
         <form-row class="pt10">
             <form-image>任务附件</form-image>
             <form-textarea tip="请输入留言"></form-textarea>
-        </form-row>
-        <form-row class="pb10">
-            <form-switch [(model)]="form.weight.show">
-                <p>5公斤以上必须注明真实重量，以便跑腿员选择合适的交通工具！</p>
-            </form-switch>
-            <div *ngIf="form.weight.show">
-                <form-input tip="请输入重量">
-                    重量
-                </form-input>
-            </div>
-        </form-row>
-        <form-row class="noline">
-            <!-- 体积 -->
-            <form-switch [(model)]="form.tiji.show">
-                <p>非常规体积请务必填写物品尺寸，以便选择合适交通工具！</p>
-            </form-switch>
-            <div class="row" *ngIf="form.tiji.show">
-                <form-input type="number" (modelChange)="lengthChange($event)" [(model)]="form.tiji.length" tip="请输入长度">
-                    长度
-                </form-input>
-                <form-input type="number" (modelChange)="widthChange($event)" [(model)]="form.tiji.width" tip="请输入宽度">
-                    宽度
-                </form-input>
-                <form-input type="number" (modelChange)="heightChange($event)" [(model)]="form.tiji.height" tip="请输入高度">
-                    高度
-                </form-input>
-            </div>
         </form-row>
         <div class="h50"></div>
         <div class="post_footer">
