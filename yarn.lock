@@ -464,10 +464,6 @@ autoprefixer@^7.2.3:
     postcss "^6.0.14"
     postcss-value-parser "^3.2.3"
 
-autosize@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/autosize/-/autosize-4.0.0.tgz#7a0599b1ba84d73bd7589b0d9da3870152c69237"
-
 aws-sign2@~0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
@@ -3462,13 +3458,12 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
 meepo-autosize@>=1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/meepo-autosize/-/meepo-autosize-1.0.9.tgz#e101dd246bd68166a912e39f38c4cc46b7e59c0d"
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/meepo-autosize/-/meepo-autosize-1.2.0.tgz#a1dacddbfb9b283a714d09b0fea971e80ec5512e"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"
     "@angular/platform-browser" "5.2.0-beta.1"
-    autosize "^4.0.0"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.5"
     zone.js "0.8.4"
@@ -3541,8 +3536,8 @@ meepo-core@^2.9.4:
     zone.js "0.8.4"
 
 meepo-forms@>=1.2.6:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.5.1.tgz#83c00975fb90b448be4b4df79c70155626a0ba85"
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.5.3.tgz#72dc5b5f97d6bf8297b751ecdb143991a65b3d8c"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"
@@ -3557,8 +3552,8 @@ meepo-forms@>=1.2.6:
     zone.js "0.8.4"
 
 meepo-jssdk@>=1.0.2, meepo-jssdk@>=1.0.5:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/meepo-jssdk/-/meepo-jssdk-1.0.7.tgz#c86a92942b2cf3053db5ff386b680c3e3d69d85d"
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/meepo-jssdk/-/meepo-jssdk-1.0.9.tgz#8a97ca9e2145018ecef4974c988b7a0c0b8ccb70"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"

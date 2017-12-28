@@ -31,33 +31,38 @@
                 <i class="form_mobile_icon"></i>联系电话
             </form-input>
         </form-row>
-        <form-switch [(model)]="form.weight.show">
-            <p class="meepo_tip">5公斤以上必须注明真实重量，以便跑腿员选择合适的交通工具！</p>
-        </form-switch>
-        <div *ngIf="form.weight.show">
-            <form-input tip="请输入重量">
-                重量
-            </form-input>
-        </div>
-        <form-switch [(model)]="form.tiji.show">
-            <p class="meepo_tip">非常规体积请务必填写物品尺寸，以便选择合适交通工具！</p>
-        </form-switch>
-        <div class="row" *ngIf="form.tiji.show">
-            <form-input type="number" (modelChange)="lengthChange($event)" [(model)]="form.tiji.length" tip="请输入长度">
-                长度
-            </form-input>
-            <form-input type="number" (modelChange)="widthChange($event)" [(model)]="form.tiji.width" tip="请输入宽度">
-                宽度
-            </form-input>
-            <form-input type="number" (modelChange)="heightChange($event)" [(model)]="form.tiji.height" tip="请输入高度">
-                高度
-            </form-input>
-        </div>
-        <form-row class="pt10">
-            <form-image>任务附件</form-image>
-            <form-textarea tip="请输入留言"></form-textarea>
+        <form-row>
+            <form-switch [(model)]="form.weight.show">
+                <p class="meepo_tip">5公斤以上必须注明真实重量，以便跑腿员选择合适的交通工具！</p>
+            </form-switch>
+            <div *ngIf="form.weight.show">
+                <form-input tip="请输入重量">
+                    重量
+                </form-input>
+            </div>
         </form-row>
-        <div class="h50"></div>
+        <form-row>
+            <form-switch [(model)]="form.tiji.show">
+                <p class="meepo_tip">非常规体积请务必填写物品尺寸，以便选择合适交通工具！</p>
+            </form-switch>
+            <div class="row" *ngIf="form.tiji.show">
+                <form-input type="number" (modelChange)="lengthChange($event)" [(model)]="form.tiji.length" tip="请输入长度">
+                    长度
+                </form-input>
+                <form-input type="number" (modelChange)="widthChange($event)" [(model)]="form.tiji.width" tip="请输入宽度">
+                    宽度
+                </form-input>
+                <form-input type="number" (modelChange)="heightChange($event)" [(model)]="form.tiji.height" tip="请输入高度">
+                    高度
+                </form-input>
+            </div>
+        </form-row>
+        <form-row>
+            <form-image>任务附件</form-image>
+            <form-textarea tip="请输入留言">
+                任务留言
+            </form-textarea>
+        </form-row>
         <div class="post_footer">
             <a href="javascript:;" (click)="cancel()" class="weui-btn weui-btn_default">取消</a>
             <div class="post_footer_item_divider"></div>
