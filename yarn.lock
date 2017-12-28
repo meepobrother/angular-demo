@@ -167,8 +167,8 @@
   resolved "https://registry.yarnpkg.com/@schematics/schematics/-/schematics-0.0.11.tgz#c8f70f270ed38f29b2873248126fd59abd635862"
 
 "@types/jasmine@*":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.8.2.tgz#6ae4d8740c0da5d5a627df725b4eed71b8e36668"
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.8.3.tgz#f910edc67d69393d562d10f8f3d205ea3f3306bf"
 
 "@types/jasmine@~2.5.53":
   version "2.5.54"
@@ -3431,8 +3431,8 @@ make-dir@^1.0.0:
     pify "^3.0.0"
 
 make-error@^1.1.1:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/make-error/-/make-error-1.3.0.tgz#52ad3a339ccf10ce62b4040b708fe707244b8b96"
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/make-error/-/make-error-1.3.2.tgz#8762ffad2444dd8ff1f7c819629fa28e24fea1c4"
 
 map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
@@ -3474,8 +3474,8 @@ meepo-autosize@>=1.0.9:
     zone.js "0.8.4"
 
 meepo-axios@>=1.2.0, meepo-axios@>=1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/meepo-axios/-/meepo-axios-1.2.1.tgz#09ff71798c2adb04f192c5ec20d99322e0fe7d4b"
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/meepo-axios/-/meepo-axios-1.2.2.tgz#44598bfc10716fe5bf2e8e3c0179d2ad41ec545a"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"
@@ -3483,6 +3483,7 @@ meepo-axios@>=1.2.0, meepo-axios@>=1.2.1:
     axios "^0.17.1"
     meepo-base64 "^1.1.1"
     meepo-core "^2.9.4"
+    meepo-uuid "^1.0.8"
     reflect-metadata "~0.1.10"
     rxjs "^5.5.0"
     zone.js "0.8.4"
@@ -3500,8 +3501,8 @@ meepo-base64@^1.1.1:
     zone.js "0.8.4"
 
 meepo-bmap@>=2.8.2, meepo-bmap@>=2.8.4:
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-3.2.3.tgz#dfc6a5f6496a977c84ed870579abc0ac992762a3"
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-3.2.7.tgz#816ac36ac19785282b874ee3a2340cb312bc189b"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"
@@ -3515,8 +3516,8 @@ meepo-bmap@>=2.8.2, meepo-bmap@>=2.8.4:
     zone.js "0.8.4"
 
 meepo-core@>=2.9.4, meepo-core@>=2.9.5, meepo-core@>=3.0.4, meepo-core@^=3.0.0:
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-3.0.7.tgz#426088a4bea9b4986e2b4ea857dc110c699f5097"
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-3.0.9.tgz#5849022c857d0a0adc94c6dfbcbcde472469b636"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"
@@ -3540,8 +3541,8 @@ meepo-core@^2.9.4:
     zone.js "0.8.4"
 
 meepo-forms@>=1.2.6:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.4.2.tgz#fe0792a3ad135feda7579627f95827724c6876e3"
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.5.1.tgz#83c00975fb90b448be4b4df79c70155626a0ba85"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"
@@ -3607,8 +3608,8 @@ meepo-ua@>=1.0.0:
     zone.js "0.8.4"
 
 meepo-uploader@>=1.2.3, meepo-uploader@>=1.5.1:
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/meepo-uploader/-/meepo-uploader-1.5.4.tgz#057e3aa04b8c3de61e5e63184d6ca25b062b984d"
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/meepo-uploader/-/meepo-uploader-1.5.5.tgz#95e9642dc601056b1cd5e1dc9116b211c150681f"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"
@@ -3622,7 +3623,7 @@ meepo-uploader@>=1.2.3, meepo-uploader@>=1.5.1:
     rxjs "^5.5.0"
     zone.js "^0.8.4"
 
-meepo-uuid@>=1.0.8:
+meepo-uuid@>=1.0.8, meepo-uuid@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/meepo-uuid/-/meepo-uuid-1.0.8.tgz#834e13cf8e12745ab19d3a303844b50988dabf0c"
   dependencies:
@@ -6438,5 +6439,5 @@ zone.js@0.8.4:
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.4.tgz#cc40ae5a1c879601c5ebba2096b5c80f0c4c3602"
 
 zone.js@^0.8.14, zone.js@^0.8.4:
-  version "0.8.18"
-  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.18.tgz#8cecb3977fcd1b3090562ff4570e2847e752b48d"
+  version "0.8.19"
+  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.19.tgz#a4b522cd9e8b7b616a638c297d720d4c7f292f71"

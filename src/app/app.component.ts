@@ -30,18 +30,13 @@ export class AppComponent implements OnInit {
     public address: BmapAddressSelectService,
     public bmap: BmapService
   ) {
-    this.address.show$.subscribe(res => {
-      if (this.sn = res.sn) {
-        console.log(res);
-      }
-    });
+    
   }
 
   ngOnInit() {
     this.core.app$.next({
       title: '发布任务'
     });
-    console.log(this.bmap);
     this.core.showMenu({
       show: false,
       items: {

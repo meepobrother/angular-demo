@@ -9,9 +9,9 @@ import { BmapAddressSelectService } from 'meepo-bmap';
 import { UuidService } from 'meepo-uuid';
 @Component({
     selector: 'post-task',
-    templateUrl: 'post-task.html',
+    templateUrl: './post-task.html',
     styleUrls: [
-        'post-task.scss'
+        './post-task.scss'
     ],
     encapsulation: ViewEncapsulation.None
 })
