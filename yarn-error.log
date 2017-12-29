@@ -2,7 +2,7 @@ Arguments:
   /usr/local/bin/node /usr/local/bin/yarn upgrade
 
 PATH: 
-  /Volumes/meepo/angular-demo/node_modules/.bin:/Users/meepo/.config/yarn/link/node_modules/.bin:/Volumes/meepo/angular-demo/node_modules/.bin:/Users/meepo/.config/yarn/link/node_modules/.bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/bin/node_modules/npm/bin/node-gyp-bin:/Users/meepo/.rvm/gems/ruby-2.4.0/bin:/Users/meepo/.rvm/gems/ruby-2.4.0@global/bin:/Users/meepo/.rvm/rubies/ruby-2.4.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/meepo/.rvm/gems/ruby-2.4.0/bin:/Users/meepo/.rvm/gems/ruby-2.4.0@global/bin:/Users/meepo/.rvm/rubies/ruby-2.4.0/bin:/Users/meepo/.rvm/bin:/Users/meepo/.rvm/bin
+  /Users/meepo/.rvm/gems/ruby-2.4.0/bin:/Users/meepo/.rvm/gems/ruby-2.4.0@global/bin:/Users/meepo/.rvm/rubies/ruby-2.4.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/meepo/.rvm/gems/ruby-2.4.0/bin:/Users/meepo/.rvm/gems/ruby-2.4.0@global/bin:/Users/meepo/.rvm/rubies/ruby-2.4.0/bin:/Users/meepo/.rvm/bin:/Users/meepo/.rvm/bin
 
 Yarn version: 
   1.2.1
@@ -22,7 +22,7 @@ npm manifest:
       "ng": "ng",
       "start": "ng serve --open",
       "build": "yarn upgrade && ng build --prod",
-      "build2": "yarn upgrade && ng build --prod -d ../addons/imeepos_runnerpro/template/mobile/v3/",
+      "build2": "ng build --prod -d ../addons/imeepos_runnerpro/template/mobile/v3/",
       "test": "ng test",
       "lint": "ng lint",
       "e2e": "ng e2e",
@@ -42,6 +42,8 @@ npm manifest:
       "meepo-bmap": ">=2.8.4",
       "meepo-core": "^=3.0.0",
       "meepo-forms": ">=1.2.6",
+      "meepo-jssdk": ">=1.0.5",
+      "meepo-popover": ">=1.0.2",
       "meepo-uploader": ">=1.5.1",
       "rxjs": "^5.5.2",
       "zone.js": "^0.8.14"
@@ -244,8 +246,8 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@schematics/schematics/-/schematics-0.0.11.tgz#c8f70f270ed38f29b2873248126fd59abd635862"
   
   "@types/jasmine@*":
-    version "2.8.2"
-    resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.8.2.tgz#6ae4d8740c0da5d5a627df725b4eed71b8e36668"
+    version "2.8.3"
+    resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.8.3.tgz#f910edc67d69393d562d10f8f3d205ea3f3306bf"
   
   "@types/jasmine@~2.5.53":
     version "2.5.54"
@@ -298,8 +300,8 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.13.tgz#105495ae5361d697bd195c825192e1ad7f253787"
   
   acorn@^5.0.0:
-    version "5.2.1"
-    resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.2.1.tgz#317ac7821826c22c702d66189ab8359675f135d7"
+    version "5.3.0"
+    resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.3.0.tgz#7446d39459c54fb49a80e6ee6478149b940ec822"
   
   adm-zip@0.4.4:
     version "0.4.4"
@@ -540,10 +542,6 @@ Lockfile:
       num2fraction "^1.2.2"
       postcss "^6.0.14"
       postcss-value-parser "^3.2.3"
-  
-  autosize@^4.0.0:
-    version "4.0.0"
-    resolved "https://registry.yarnpkg.com/autosize/-/autosize-4.0.0.tgz#7a0599b1ba84d73bd7589b0d9da3870152c69237"
   
   aws-sign2@~0.6.0:
     version "0.6.0"
@@ -3508,8 +3506,8 @@ Lockfile:
       pify "^3.0.0"
   
   make-error@^1.1.1:
-    version "1.3.0"
-    resolved "https://registry.yarnpkg.com/make-error/-/make-error-1.3.0.tgz#52ad3a339ccf10ce62b4040b708fe707244b8b96"
+    version "1.3.2"
+    resolved "https://registry.yarnpkg.com/make-error/-/make-error-1.3.2.tgz#8762ffad2444dd8ff1f7c819629fa28e24fea1c4"
   
   map-obj@^1.0.0, map-obj@^1.0.1:
     version "1.0.1"
@@ -3539,20 +3537,19 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   
   meepo-autosize@>=1.0.9:
-    version "1.0.9"
-    resolved "https://registry.yarnpkg.com/meepo-autosize/-/meepo-autosize-1.0.9.tgz#e101dd246bd68166a912e39f38c4cc46b7e59c0d"
+    version "1.2.0"
+    resolved "https://registry.yarnpkg.com/meepo-autosize/-/meepo-autosize-1.2.0.tgz#a1dacddbfb9b283a714d09b0fea971e80ec5512e"
     dependencies:
       "@angular/common" "5.2.0-beta.1"
       "@angular/core" "5.2.0-beta.1"
       "@angular/platform-browser" "5.2.0-beta.1"
-      autosize "^4.0.0"
       reflect-metadata "^0.1.10"
       rxjs "^5.5.5"
       zone.js "0.8.4"
   
   meepo-axios@>=1.2.0, meepo-axios@>=1.2.1:
-    version "1.2.1"
-    resolved "https://registry.yarnpkg.com/meepo-axios/-/meepo-axios-1.2.1.tgz#09ff71798c2adb04f192c5ec20d99322e0fe7d4b"
+    version "1.2.2"
+    resolved "https://registry.yarnpkg.com/meepo-axios/-/meepo-axios-1.2.2.tgz#44598bfc10716fe5bf2e8e3c0179d2ad41ec545a"
     dependencies:
       "@angular/common" "5.2.0-beta.1"
       "@angular/core" "5.2.0-beta.1"
@@ -3560,6 +3557,7 @@ Lockfile:
       axios "^0.17.1"
       meepo-base64 "^1.1.1"
       meepo-core "^2.9.4"
+      meepo-uuid "^1.0.8"
       reflect-metadata "~0.1.10"
       rxjs "^5.5.0"
       zone.js "0.8.4"
@@ -3577,8 +3575,8 @@ Lockfile:
       zone.js "0.8.4"
   
   meepo-bmap@>=2.8.2, meepo-bmap@>=2.8.4:
-    version "3.1.5"
-    resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-3.1.5.tgz#34e720059e04742d648536a13f0fd0bab23d4476"
+    version "3.3.0"
+    resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-3.3.0.tgz#71e50389f13465b8b396635d12f7ebfd9de7af08"
     dependencies:
       "@angular/common" "5.2.0-beta.1"
       "@angular/core" "5.2.0-beta.1"
@@ -3586,18 +3584,19 @@ Lockfile:
       meepo-axios ">=1.2.0"
       meepo-core ">=2.9.5"
       meepo-picker ">=1.0.8"
+      meepo-store "^1.0.0"
       reflect-metadata "^0.1.10"
       rxjs "^5.5.0"
-      store "^2.0.12"
       zone.js "0.8.4"
   
-  meepo-core@>=2.9.4, meepo-core@>=2.9.5, meepo-core@^=3.0.0:
-    version "3.0.4"
-    resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-3.0.4.tgz#e46ebcee28830da5d81b6dd2141ea46df4ac74e7"
+  meepo-core@>=2.9.4, meepo-core@>=2.9.5, meepo-core@>=3.0.4, meepo-core@^=3.0.0:
+    version "3.1.1"
+    resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-3.1.1.tgz#55250008cc261afcedb73e57a2dc69a694dd6048"
     dependencies:
       "@angular/common" "5.2.0-beta.1"
       "@angular/core" "5.2.0-beta.1"
       "@angular/platform-browser" "5.2.0-beta.1"
+      meepo-popover ">=1.0.0"
       meepo-xscroll ">=1.2.9"
       reflect-metadata "^0.1.10"
       rxjs "^5.5.5"
@@ -3616,8 +3615,8 @@ Lockfile:
       zone.js "0.8.4"
   
   meepo-forms@>=1.2.6:
-    version "1.3.0"
-    resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.3.0.tgz#32d9c7cffef52f4680c31efe67d89ab93d3167cf"
+    version "1.5.3"
+    resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.5.3.tgz#72dc5b5f97d6bf8297b751ecdb143991a65b3d8c"
     dependencies:
       "@angular/common" "5.2.0-beta.1"
       "@angular/core" "5.2.0-beta.1"
@@ -3631,13 +3630,15 @@ Lockfile:
       rxjs "^5.5.5"
       zone.js "0.8.4"
   
-  meepo-jssdk@>=1.0.2:
-    version "1.0.3"
-    resolved "https://registry.yarnpkg.com/meepo-jssdk/-/meepo-jssdk-1.0.3.tgz#8abfd655be74b97afee64127db47f574cbf33ea0"
+  meepo-jssdk@>=1.0.2, meepo-jssdk@>=1.0.5:
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/meepo-jssdk/-/meepo-jssdk-1.1.0.tgz#0f29c40ce620c84fc25a4338b223f0f966ad6463"
     dependencies:
       "@angular/common" "5.2.0-beta.1"
       "@angular/core" "5.2.0-beta.1"
       "@angular/forms" "5.2.0-beta.1"
+      meepo-axios ">=1.2.1"
+      meepo-core ">=3.0.4"
       reflect-metadata "^0.1.10"
       rxjs "^5.5.5"
       zone.js "0.8.4"
@@ -3655,20 +3656,44 @@ Lockfile:
       rxjs "^5.5.5"
       zone.js "0.8.4"
   
-  meepo-ua@>=1.0.0:
+  meepo-popover@>=1.0.0, meepo-popover@>=1.0.2:
+    version "1.0.2"
+    resolved "https://registry.yarnpkg.com/meepo-popover/-/meepo-popover-1.0.2.tgz#976e1cf632403fd2767edac04096dbe299bb78dd"
+    dependencies:
+      "@angular/common" "5.2.0-beta.1"
+      "@angular/core" "5.2.0-beta.1"
+      "@angular/forms" "5.2.0-beta.1"
+      "@angular/platform-browser" "5.2.0-beta.1"
+      meepo-uuid ">=1.0.8"
+      meepo-xscroll ">=1.2.9"
+      reflect-metadata "^0.1.10"
+      rxjs "^5.5.5"
+      zone.js "0.8.4"
+  
+  meepo-store@^1.0.0:
     version "1.0.0"
-    resolved "https://registry.yarnpkg.com/meepo-ua/-/meepo-ua-1.0.0.tgz#175d3bfeeceb219458d1fe7449e81f3b76507433"
+    resolved "https://registry.yarnpkg.com/meepo-store/-/meepo-store-1.0.0.tgz#1b70b090510c42b82433efbaa4ea8263901d84d3"
+    dependencies:
+      "@angular/common" "5.2.0-beta.1"
+      "@angular/core" "5.2.0-beta.1"
+      "@angular/platform-browser" "5.2.0-beta.1"
+      reflect-metadata "^0.1.10"
+      rxjs "^5.5.5"
+      zone.js "0.8.4"
+  
+  meepo-ua@>=1.0.0:
+    version "1.0.3"
+    resolved "https://registry.yarnpkg.com/meepo-ua/-/meepo-ua-1.0.3.tgz#cc25e587fb522cc743d1f27a60dfbc1da6cdb070"
     dependencies:
       "@angular/common" "5.2.0-beta.1"
       "@angular/core" "5.2.0-beta.1"
       reflect-metadata "^0.1.10"
       rxjs "^5.5.5"
-      ua-parser-js "^0.7.17"
       zone.js "0.8.4"
   
   meepo-uploader@>=1.2.3, meepo-uploader@>=1.5.1:
-    version "1.5.1"
-    resolved "https://registry.yarnpkg.com/meepo-uploader/-/meepo-uploader-1.5.1.tgz#02668c4c509a1e6d8c44fc9cf31010739ee0e2a5"
+    version "1.5.7"
+    resolved "https://registry.yarnpkg.com/meepo-uploader/-/meepo-uploader-1.5.7.tgz#51b11d55c4454b5c81942e439e8bbb4fa1c08dce"
     dependencies:
       "@angular/common" "5.2.0-beta.1"
       "@angular/core" "5.2.0-beta.1"
@@ -3682,7 +3707,7 @@ Lockfile:
       rxjs "^5.5.0"
       zone.js "^0.8.4"
   
-  meepo-uuid@>=1.0.8:
+  meepo-uuid@>=1.0.8, meepo-uuid@^1.0.8:
     version "1.0.8"
     resolved "https://registry.yarnpkg.com/meepo-uuid/-/meepo-uuid-1.0.8.tgz#834e13cf8e12745ab19d3a303844b50988dabf0c"
     dependencies:
@@ -3695,8 +3720,8 @@ Lockfile:
       zone.js "0.8.4"
   
   meepo-xscroll@>=1.2.9:
-    version "1.2.9"
-    resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.2.9.tgz#1598ddb265e921dcfd1a27fbef07e7b3621e9273"
+    version "1.3.0"
+    resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.3.0.tgz#439f7fd1dcf9356e033696f02e012df55b6520e6"
     dependencies:
       "@angular/common" "5.2.0-beta.1"
       "@angular/core" "5.2.0-beta.1"
@@ -5560,10 +5585,6 @@ Lockfile:
     dependencies:
       readable-stream "^2.0.1"
   
-  store@^2.0.12:
-    version "2.0.12"
-    resolved "https://registry.yarnpkg.com/store/-/store-2.0.12.tgz#8c534e2a0b831f72b75fc5f1119857c44ef5d593"
-  
   stream-browserify@^2.0.1:
     version "2.0.1"
     resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-2.0.1.tgz#66266ee5f9bdb9940a4e4514cafb43bb71e5c9db"
@@ -5923,20 +5944,16 @@ Lockfile:
     version "2.6.2"
     resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.2.tgz#3c5b6fd7f6de0914269027f03c0946758f7673a4"
   
-  ua-parser-js@^0.7.17:
-    version "0.7.17"
-    resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.17.tgz#e9ec5f9498b9ec910e7ae3ac626a805c4d09ecac"
-  
-  uglify-es@^3.2.1:
-    version "3.3.2"
-    resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.3.2.tgz#2401df8be2a433314523753f28810793a40c5462"
+  uglify-es@3.2.2:
+    version "3.2.2"
+    resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.2.2.tgz#15c62b7775002c81b7987a1c49ecd3f126cace73"
     dependencies:
       commander "~2.12.1"
       source-map "~0.6.1"
   
   uglify-js@3.3.x:
-    version "3.3.2"
-    resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.3.2.tgz#517af20aad7abe15e1e4c9aa33c0cc72aa0107ab"
+    version "3.3.3"
+    resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.3.3.tgz#66f9b57f7dda913ad9f48a21b12e4e7377fdaf40"
     dependencies:
       commander "~2.12.1"
       source-map "~0.6.1"
@@ -5963,15 +5980,15 @@ Lockfile:
       webpack-sources "^1.0.1"
   
   uglifyjs-webpack-plugin@~1.1.2:
-    version "1.1.4"
-    resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-1.1.4.tgz#e43ad6e736c315024eb99481a7cc9362d6a066be"
+    version "1.1.5"
+    resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-1.1.5.tgz#5ec4a16da0fd10c96538f715caed10dbdb180875"
     dependencies:
       cacache "^10.0.0"
       find-cache-dir "^1.0.0"
       schema-utils "^0.3.0"
       serialize-javascript "^1.4.0"
       source-map "^0.6.1"
-      uglify-es "^3.2.1"
+      uglify-es "3.2.2"
       webpack-sources "^1.0.1"
       worker-farm "^1.4.1"
   
@@ -6498,12 +6515,14 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.4.tgz#cc40ae5a1c879601c5ebba2096b5c80f0c4c3602"
   
   zone.js@^0.8.14, zone.js@^0.8.4:
-    version "0.8.18"
-    resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.18.tgz#8cecb3977fcd1b3090562ff4570e2847e752b48d"
+    version "0.8.19"
+    resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.19.tgz#a4b522cd9e8b7b616a638c297d720d4c7f292f71"
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@angular%2fcompiler: ETIMEDOUT
-      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:123675:19)
-      at ontimeout (timers.js:475:11)
-      at tryOnTimeout (timers.js:310:5)
-      at Timer.listOnTimeout (timers.js:270:5)
+  TypeError: Cannot read property 'latest' of undefined
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:30386:34
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:103:13
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:188:7)
